@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4BFBE6E8613BFDD42AB418 /* libPods-Converge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */; };
+		B20CDFEE1F51455700071361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFED1F51455700071361 /* main.m */; };
+		B20CDFF11F51455700071361 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFF01F51455700071361 /* AppDelegate.m */; };
+		B20CDFF71F51455700071361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20CDFF51F51455700071361 /* Main.storyboard */; };
+		B20CDFFF1F51455700071361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */; };
+		B20CE00A1F51455700071361 /* ConvergeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0091F51455700071361 /* ConvergeTests.m */; };
+		B20CE0151F51455700071361 /* ConvergeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0141F51455700071361 /* ConvergeUITests.m */; };
+		B20CE0791F51482900071361 /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0251F51482900071361 /* DOPDropDownMenu.m */; };
+		B20CE07A1F51482900071361 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0281F51482900071361 /* HMSegmentedControl.m */; };
+		B20CE07B1F51482900071361 /* bitstream.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE02B1F51482900071361 /* bitstream.m */; };
+		B20CE07C1F51482900071361 /* mask.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE02D1F51482900071361 /* mask.m */; };
+		B20CE07D1F51482900071361 /* qrencode.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE02F1F51482900071361 /* qrencode.m */; };
+		B20CE07E1F51482900071361 /* qrinput.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0311F51482900071361 /* qrinput.m */; };
+		B20CE07F1F51482900071361 /* qrspec.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0331F51482900071361 /* qrspec.m */; };
+		B20CE0801F51482900071361 /* rscode.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0351F51482900071361 /* rscode.m */; };
+		B20CE0811F51482900071361 /* split.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0371F51482900071361 /* split.m */; };
+		B20CE0821F51482900071361 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE03A1F51482900071361 /* BasicEncodingRules.m */; };
+		B20CE0831F51482900071361 /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE03D1F51482900071361 /* SKTag.m */; };
+		B20CE0841F51482900071361 /* SKTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE03F1F51482900071361 /* SKTagButton.m */; };
+		B20CE0851F51482900071361 /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0411F51482900071361 /* SKTagView.m */; };
+		B20CE0861F51482900071361 /* Converge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0461F51482900071361 /* Converge.xcdatamodeld */; };
+		B20CE0871F51482900071361 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0491F51482900071361 /* Order.m */; };
+		B20CE0881F51482900071361 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE04E1F51482900071361 /* GBAlipayManager.m */; };
+		B20CE0891F51482900071361 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0511F51482900071361 /* base64.m */; };
+		B20CE08A1F51482900071361 /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0541F51482900071361 /* DataSigner.m */; };
+		B20CE08B1F51482900071361 /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0561F51482900071361 /* DataVerifier.m */; };
+		B20CE08C1F51482900071361 /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0581F51482900071361 /* MD5DataSigner.m */; };
+		B20CE08D1F51482900071361 /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE05A1F51482900071361 /* NSDataEx.m */; };
+		B20CE08E1F51482900071361 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE05C1F51482900071361 /* openssl_wrapper.m */; };
+		B20CE08F1F51482900071361 /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE05E1F51482900071361 /* RSADataSigner.m */; };
+		B20CE0901F51482900071361 /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0601F51482900071361 /* RSADataVerifier.m */; };
+		B20CE0911F51482900071361 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0621F51482900071361 /* AppAPIClient.m */; };
+		B20CE0921F51482900071361 /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0641F51482900071361 /* ErrorHandler.m */; };
+		B20CE0931F51482900071361 /* JSONS.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0661F51482900071361 /* JSONS.m */; };
+		B20CE0941F51482900071361 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0681F51482900071361 /* NSData+Base64.m */; };
+		B20CE0951F51482900071361 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE06A1F51482900071361 /* NSDate+Utility.m */; };
+		B20CE0961F51482900071361 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE06C1F51482900071361 /* NSDateFormatter+Category.m */; };
+		B20CE0971F51482900071361 /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE06E1F51482900071361 /* NSString+Crypt.m */; };
+		B20CE0981F51482900071361 /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0701F51482900071361 /* RequestAPI.m */; };
+		B20CE0991F51482900071361 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0721F51482900071361 /* StorageMgr.m */; };
+		B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0741F51482900071361 /* UIImage+MDQRCode.m */; };
+		B20CE09B1F51482900071361 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0761F51482900071361 /* Utilities.m */; };
+		B20CE09C1F51482900071361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20CE0781F51482900071361 /* Assets.xcassets */; };
+		B20CE09E1F51483E00071361 /* agreement.txt in Resources */ = {isa = PBXBuildFile; fileRef = B20CE09D1F51483E00071361 /* agreement.txt */; };
+		B20CE0A51F5148F400071361 /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A01F5148F400071361 /* AlipaySDK.bundle */; };
+		B20CE0A61F5148F400071361 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A11F5148F400071361 /* AlipaySDK.framework */; };
+		B20CE0A71F5148F400071361 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A21F5148F400071361 /* libcrypto.a */; };
+		B20CE0A81F5148F400071361 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A31F5148F400071361 /* libssl.a */; };
+		B20CE0A91F5148F400071361 /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A41F5148F400071361 /* Openssl.framework */; };
+		B20CE0AB1F51490F00071361 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0AA1F51490F00071361 /* libz.tbd */; };
+		B20CE0AD1F51492200071361 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0AC1F51492200071361 /* CoreTelephony.framework */; };
+		B20CE0AF1F51492B00071361 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0AE1F51492B00071361 /* CoreMotion.framework */; };
+		B20CE0B11F514F2B00071361 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = B20CE0B01F514F2B00071361 /* Cities.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20CE0061F51455700071361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20CDFE11F51455700071361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20CDFE81F51455700071361;
+			remoteInfo = Converge;
+		};
+		B20CE0111F51455700071361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20CDFE11F51455700071361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20CDFE81F51455700071361;
+			remoteInfo = Converge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84EF30A05B94EA52954C21A3 /* Pods-Converge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Converge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Converge/Pods-Converge.debug.xcconfig"; sourceTree = "<group>"; };
+		B20CDFE91F51455700071361 /* Converge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20CDFED1F51455700071361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B20CDFEF1F51455700071361 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B20CDFF01F51455700071361 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B20CDFF61F51455700071361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20CDFFE1F51455700071361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B20CE0001F51455700071361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20CE0051F51455700071361 /* ConvergeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvergeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20CE0091F51455700071361 /* ConvergeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvergeTests.m; sourceTree = "<group>"; };
+		B20CE00B1F51455700071361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20CE0101F51455700071361 /* ConvergeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvergeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20CE0141F51455700071361 /* ConvergeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvergeUITests.m; sourceTree = "<group>"; };
+		B20CE0161F51455700071361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20CE0241F51482900071361 /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
+		B20CE0251F51482900071361 /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
+		B20CE0271F51482900071361 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		B20CE0281F51482900071361 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		B20CE02A1F51482900071361 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		B20CE02B1F51482900071361 /* bitstream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bitstream.m; sourceTree = "<group>"; };
+		B20CE02C1F51482900071361 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		B20CE02D1F51482900071361 /* mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mask.m; sourceTree = "<group>"; };
+		B20CE02E1F51482900071361 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		B20CE02F1F51482900071361 /* qrencode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrencode.m; sourceTree = "<group>"; };
+		B20CE0301F51482900071361 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		B20CE0311F51482900071361 /* qrinput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrinput.m; sourceTree = "<group>"; };
+		B20CE0321F51482900071361 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		B20CE0331F51482900071361 /* qrspec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrspec.m; sourceTree = "<group>"; };
+		B20CE0341F51482900071361 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		B20CE0351F51482900071361 /* rscode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rscode.m; sourceTree = "<group>"; };
+		B20CE0361F51482900071361 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		B20CE0371F51482900071361 /* split.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = split.m; sourceTree = "<group>"; };
+		B20CE0391F51482900071361 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
+		B20CE03A1F51482900071361 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
+		B20CE03C1F51482900071361 /* SKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTag.h; sourceTree = "<group>"; };
+		B20CE03D1F51482900071361 /* SKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTag.m; sourceTree = "<group>"; };
+		B20CE03E1F51482900071361 /* SKTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagButton.h; sourceTree = "<group>"; };
+		B20CE03F1F51482900071361 /* SKTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagButton.m; sourceTree = "<group>"; };
+		B20CE0401F51482900071361 /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
+		B20CE0411F51482900071361 /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
+		B20CE0431F51482900071361 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B20CE0471F51482900071361 /* Converge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Converge.xcdatamodel; sourceTree = "<group>"; };
+		B20CE0481F51482900071361 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		B20CE0491F51482900071361 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		B20CE04C1F51482900071361 /* GBAlipayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAlipayConfig.h; sourceTree = "<group>"; };
+		B20CE04D1F51482900071361 /* GBAlipayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAlipayManager.h; sourceTree = "<group>"; };
+		B20CE04E1F51482900071361 /* GBAlipayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAlipayManager.m; sourceTree = "<group>"; };
+		B20CE0501F51482900071361 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		B20CE0511F51482900071361 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		B20CE0521F51482900071361 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B20CE0531F51482900071361 /* DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSigner.h; sourceTree = "<group>"; };
+		B20CE0541F51482900071361 /* DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSigner.m; sourceTree = "<group>"; };
+		B20CE0551F51482900071361 /* DataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataVerifier.h; sourceTree = "<group>"; };
+		B20CE0561F51482900071361 /* DataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataVerifier.m; sourceTree = "<group>"; };
+		B20CE0571F51482900071361 /* MD5DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataSigner.h; sourceTree = "<group>"; };
+		B20CE0581F51482900071361 /* MD5DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataSigner.m; sourceTree = "<group>"; };
+		B20CE0591F51482900071361 /* NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataEx.h; sourceTree = "<group>"; };
+		B20CE05A1F51482900071361 /* NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataEx.m; sourceTree = "<group>"; };
+		B20CE05B1F51482900071361 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
+		B20CE05C1F51482900071361 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
+		B20CE05D1F51482900071361 /* RSADataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataSigner.h; sourceTree = "<group>"; };
+		B20CE05E1F51482900071361 /* RSADataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataSigner.m; sourceTree = "<group>"; };
+		B20CE05F1F51482900071361 /* RSADataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataVerifier.h; sourceTree = "<group>"; };
+		B20CE0601F51482900071361 /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataVerifier.m; sourceTree = "<group>"; };
+		B20CE0611F51482900071361 /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
+		B20CE0621F51482900071361 /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
+		B20CE0631F51482900071361 /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		B20CE0641F51482900071361 /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
+		B20CE0651F51482900071361 /* JSONS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONS.h; sourceTree = "<group>"; };
+		B20CE0661F51482900071361 /* JSONS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONS.m; sourceTree = "<group>"; };
+		B20CE0671F51482900071361 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		B20CE0681F51482900071361 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		B20CE0691F51482900071361 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		B20CE06A1F51482900071361 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		B20CE06B1F51482900071361 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		B20CE06C1F51482900071361 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		B20CE06D1F51482900071361 /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
+		B20CE06E1F51482900071361 /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
+		B20CE06F1F51482900071361 /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
+		B20CE0701F51482900071361 /* RequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPI.m; sourceTree = "<group>"; };
+		B20CE0711F51482900071361 /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMgr.h; sourceTree = "<group>"; };
+		B20CE0721F51482900071361 /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMgr.m; sourceTree = "<group>"; };
+		B20CE0731F51482900071361 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		B20CE0741F51482900071361 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
+		B20CE0751F51482900071361 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		B20CE0761F51482900071361 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		B20CE0781F51482900071361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20CE09D1F51483E00071361 /* agreement.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agreement.txt; sourceTree = "<group>"; };
+		B20CE09F1F51486500071361 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B20CE0A01F5148F400071361 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = Converge/AlipaySDK.bundle; sourceTree = "<group>"; };
+		B20CE0A11F5148F400071361 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = Converge/AlipaySDK.framework; sourceTree = "<group>"; };
+		B20CE0A21F5148F400071361 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Converge/libcrypto.a; sourceTree = "<group>"; };
+		B20CE0A31F5148F400071361 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Converge/libssl.a; sourceTree = "<group>"; };
+		B20CE0A41F5148F400071361 /* Openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Openssl.framework; path = Converge/Openssl.framework; sourceTree = "<group>"; };
+		B20CE0AA1F51490F00071361 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B20CE0AC1F51492200071361 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B20CE0AE1F51492B00071361 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B20CE0B01F514F2B00071361 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
+		B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Converge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB203EE8A81BD8B8DC92D414 /* Pods-Converge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Converge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Converge/Pods-Converge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20CDFE61F51455700071361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CE0AF1F51492B00071361 /* CoreMotion.framework in Frameworks */,
+				B20CE0AD1F51492200071361 /* CoreTelephony.framework in Frameworks */,
+				B20CE0AB1F51490F00071361 /* libz.tbd in Frameworks */,
+				B20CE0A51F5148F400071361 /* AlipaySDK.bundle in Frameworks */,
+				B20CE0A61F5148F400071361 /* AlipaySDK.framework in Frameworks */,
+				B20CE0A71F5148F400071361 /* libcrypto.a in Frameworks */,
+				B20CE0A81F5148F400071361 /* libssl.a in Frameworks */,
+				B20CE0A91F5148F400071361 /* Openssl.framework in Frameworks */,
+				1A4BFBE6E8613BFDD42AB418 /* libPods-Converge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CE0021F51455700071361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CE00D1F51455700071361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A8D7E555B735FC5EEDBD0AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84EF30A05B94EA52954C21A3 /* Pods-Converge.debug.xcconfig */,
+				CB203EE8A81BD8B8DC92D414 /* Pods-Converge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		309DF8044CC4324085E1A623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0AE1F51492B00071361 /* CoreMotion.framework */,
+				B20CE0AC1F51492200071361 /* CoreTelephony.framework */,
+				B20CE0AA1F51490F00071361 /* libz.tbd */,
+				B20CE0A01F5148F400071361 /* AlipaySDK.bundle */,
+				B20CE0A11F5148F400071361 /* AlipaySDK.framework */,
+				B20CE0A21F5148F400071361 /* libcrypto.a */,
+				B20CE0A31F5148F400071361 /* libssl.a */,
+				B20CE0A41F5148F400071361 /* Openssl.framework */,
+				B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20CDFE01F51455700071361 = {
+			isa = PBXGroup;
+			children = (
+				B20CDFEB1F51455700071361 /* Converge */,
+				B20CE0081F51455700071361 /* ConvergeTests */,
+				B20CE0131F51455700071361 /* ConvergeUITests */,
+				B20CDFEA1F51455700071361 /* Products */,
+				0A8D7E555B735FC5EEDBD0AE /* Pods */,
+				309DF8044CC4324085E1A623 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B20CDFEA1F51455700071361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20CDFE91F51455700071361 /* Converge.app */,
+				B20CE0051F51455700071361 /* ConvergeTests.xctest */,
+				B20CE0101F51455700071361 /* ConvergeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20CDFEB1F51455700071361 /* Converge */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0221F51482900071361 /* 3rd */,
+				B20CE0421F51482900071361 /* Constant */,
+				B20CE0441F51482900071361 /* Controller */,
+				B20CE0451F51482900071361 /* Model */,
+				B20CE04A1F51482900071361 /* Utlity */,
+				B20CE0771F51482900071361 /* View */,
+				B20CDFEC1F51455700071361 /* Supporting Files */,
+			);
+			path = Converge;
+			sourceTree = "<group>";
+		};
+		B20CDFEC1F51455700071361 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE09F1F51486500071361 /* PrefixHeader.pch */,
+				B20CDFEF1F51455700071361 /* AppDelegate.h */,
+				B20CDFF01F51455700071361 /* AppDelegate.m */,
+				B20CE0001F51455700071361 /* Info.plist */,
+				B20CE09D1F51483E00071361 /* agreement.txt */,
+				B20CE0B01F514F2B00071361 /* Cities.plist */,
+				B20CDFED1F51455700071361 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20CE0081F51455700071361 /* ConvergeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0091F51455700071361 /* ConvergeTests.m */,
+				B20CE00B1F51455700071361 /* Info.plist */,
+			);
+			path = ConvergeTests;
+			sourceTree = "<group>";
+		};
+		B20CE0131F51455700071361 /* ConvergeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0141F51455700071361 /* ConvergeUITests.m */,
+				B20CE0161F51455700071361 /* Info.plist */,
+			);
+			path = ConvergeUITests;
+			sourceTree = "<group>";
+		};
+		B20CE0221F51482900071361 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0231F51482900071361 /* DOPDropDownMenu - Enhanced */,
+				B20CE0261F51482900071361 /* HMSegmentedControl */,
+				B20CE0291F51482900071361 /* MDQREncode */,
+				B20CE0381F51482900071361 /* SCZBasicEncodingRules */,
+				B20CE03B1F51482900071361 /* SKTagView */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		B20CE0231F51482900071361 /* DOPDropDownMenu - Enhanced */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0241F51482900071361 /* DOPDropDownMenu.h */,
+				B20CE0251F51482900071361 /* DOPDropDownMenu.m */,
+			);
+			path = "DOPDropDownMenu - Enhanced";
+			sourceTree = "<group>";
+		};
+		B20CE0261F51482900071361 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0271F51482900071361 /* HMSegmentedControl.h */,
+				B20CE0281F51482900071361 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		B20CE0291F51482900071361 /* MDQREncode */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE02A1F51482900071361 /* bitstream.h */,
+				B20CE02B1F51482900071361 /* bitstream.m */,
+				B20CE02C1F51482900071361 /* mask.h */,
+				B20CE02D1F51482900071361 /* mask.m */,
+				B20CE02E1F51482900071361 /* qrencode.h */,
+				B20CE02F1F51482900071361 /* qrencode.m */,
+				B20CE0301F51482900071361 /* qrinput.h */,
+				B20CE0311F51482900071361 /* qrinput.m */,
+				B20CE0321F51482900071361 /* qrspec.h */,
+				B20CE0331F51482900071361 /* qrspec.m */,
+				B20CE0341F51482900071361 /* rscode.h */,
+				B20CE0351F51482900071361 /* rscode.m */,
+				B20CE0361F51482900071361 /* split.h */,
+				B20CE0371F51482900071361 /* split.m */,
+			);
+			path = MDQREncode;
+			sourceTree = "<group>";
+		};
+		B20CE0381F51482900071361 /* SCZBasicEncodingRules */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0391F51482900071361 /* BasicEncodingRules.h */,
+				B20CE03A1F51482900071361 /* BasicEncodingRules.m */,
+			);
+			path = SCZBasicEncodingRules;
+			sourceTree = "<group>";
+		};
+		B20CE03B1F51482900071361 /* SKTagView */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE03C1F51482900071361 /* SKTag.h */,
+				B20CE03D1F51482900071361 /* SKTag.m */,
+				B20CE03E1F51482900071361 /* SKTagButton.h */,
+				B20CE03F1F51482900071361 /* SKTagButton.m */,
+				B20CE0401F51482900071361 /* SKTagView.h */,
+				B20CE0411F51482900071361 /* SKTagView.m */,
+			);
+			path = SKTagView;
+			sourceTree = "<group>";
+		};
+		B20CE0421F51482900071361 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0431F51482900071361 /* Constants.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B20CE0441F51482900071361 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B20CE0451F51482900071361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0461F51482900071361 /* Converge.xcdatamodeld */,
+				B20CE0481F51482900071361 /* Order.h */,
+				B20CE0491F51482900071361 /* Order.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B20CE04A1F51482900071361 /* Utlity */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE04B1F51482900071361 /* AliMgr */,
+				B20CE04F1F51482900071361 /* AliUtil */,
+				B20CE0611F51482900071361 /* AppAPIClient.h */,
+				B20CE0621F51482900071361 /* AppAPIClient.m */,
+				B20CE0631F51482900071361 /* ErrorHandler.h */,
+				B20CE0641F51482900071361 /* ErrorHandler.m */,
+				B20CE0651F51482900071361 /* JSONS.h */,
+				B20CE0661F51482900071361 /* JSONS.m */,
+				B20CE0671F51482900071361 /* NSData+Base64.h */,
+				B20CE0681F51482900071361 /* NSData+Base64.m */,
+				B20CE0691F51482900071361 /* NSDate+Utility.h */,
+				B20CE06A1F51482900071361 /* NSDate+Utility.m */,
+				B20CE06B1F51482900071361 /* NSDateFormatter+Category.h */,
+				B20CE06C1F51482900071361 /* NSDateFormatter+Category.m */,
+				B20CE06D1F51482900071361 /* NSString+Crypt.h */,
+				B20CE06E1F51482900071361 /* NSString+Crypt.m */,
+				B20CE06F1F51482900071361 /* RequestAPI.h */,
+				B20CE0701F51482900071361 /* RequestAPI.m */,
+				B20CE0711F51482900071361 /* StorageMgr.h */,
+				B20CE0721F51482900071361 /* StorageMgr.m */,
+				B20CE0731F51482900071361 /* UIImage+MDQRCode.h */,
+				B20CE0741F51482900071361 /* UIImage+MDQRCode.m */,
+				B20CE0751F51482900071361 /* Utilities.h */,
+				B20CE0761F51482900071361 /* Utilities.m */,
+			);
+			path = Utlity;
+			sourceTree = "<group>";
+		};
+		B20CE04B1F51482900071361 /* AliMgr */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE04C1F51482900071361 /* GBAlipayConfig.h */,
+				B20CE04D1F51482900071361 /* GBAlipayManager.h */,
+				B20CE04E1F51482900071361 /* GBAlipayManager.m */,
+			);
+			path = AliMgr;
+			sourceTree = "<group>";
+		};
+		B20CE04F1F51482900071361 /* AliUtil */ = {
+			isa = PBXGroup;
+			children = (
+				B20CE0501F51482900071361 /* base64.h */,
+				B20CE0511F51482900071361 /* base64.m */,
+				B20CE0521F51482900071361 /* config.h */,
+				B20CE0531F51482900071361 /* DataSigner.h */,
+				B20CE0541F51482900071361 /* DataSigner.m */,
+				B20CE0551F51482900071361 /* DataVerifier.h */,
+				B20CE0561F51482900071361 /* DataVerifier.m */,
+				B20CE0571F51482900071361 /* MD5DataSigner.h */,
+				B20CE0581F51482900071361 /* MD5DataSigner.m */,
+				B20CE0591F51482900071361 /* NSDataEx.h */,
+				B20CE05A1F51482900071361 /* NSDataEx.m */,
+				B20CE05B1F51482900071361 /* openssl_wrapper.h */,
+				B20CE05C1F51482900071361 /* openssl_wrapper.m */,
+				B20CE05D1F51482900071361 /* RSADataSigner.h */,
+				B20CE05E1F51482900071361 /* RSADataSigner.m */,
+				B20CE05F1F51482900071361 /* RSADataVerifier.h */,
+				B20CE0601F51482900071361 /* RSADataVerifier.m */,
+			);
+			path = AliUtil;
+			sourceTree = "<group>";
+		};
+		B20CE0771F51482900071361 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20CDFF51F51455700071361 /* Main.storyboard */,
+				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
+				B20CE0781F51482900071361 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20CDFE81F51455700071361 /* Converge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20CE0191F51455700071361 /* Build configuration list for PBXNativeTarget "Converge" */;
+			buildPhases = (
+				BDAFAA81E6279828FB1E7975 /* [CP] Check Pods Manifest.lock */,
+				B20CDFE51F51455700071361 /* Sources */,
+				B20CDFE61F51455700071361 /* Frameworks */,
+				B20CDFE71F51455700071361 /* Resources */,
+				AFFFC3BDCD3932454061AAA8 /* [CP] Embed Pods Frameworks */,
+				B78EA7EBB1B9069E1467C382 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Converge;
+			productName = Converge;
+			productReference = B20CDFE91F51455700071361 /* Converge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20CE0041F51455700071361 /* ConvergeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20CE01C1F51455700071361 /* Build configuration list for PBXNativeTarget "ConvergeTests" */;
+			buildPhases = (
+				B20CE0011F51455700071361 /* Sources */,
+				B20CE0021F51455700071361 /* Frameworks */,
+				B20CE0031F51455700071361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20CE0071F51455700071361 /* PBXTargetDependency */,
+			);
+			name = ConvergeTests;
+			productName = ConvergeTests;
+			productReference = B20CE0051F51455700071361 /* ConvergeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20CE00F1F51455700071361 /* ConvergeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20CE01F1F51455700071361 /* Build configuration list for PBXNativeTarget "ConvergeUITests" */;
+			buildPhases = (
+				B20CE00C1F51455700071361 /* Sources */,
+				B20CE00D1F51455700071361 /* Frameworks */,
+				B20CE00E1F51455700071361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20CE0121F51455700071361 /* PBXTargetDependency */,
+			);
+			name = ConvergeUITests;
+			productName = ConvergeUITests;
+			productReference = B20CE0101F51455700071361 /* ConvergeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20CDFE11F51455700071361 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Yixin studio";
+				TargetAttributes = {
+					B20CDFE81F51455700071361 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					B20CE0041F51455700071361 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B20CDFE81F51455700071361;
+					};
+					B20CE00F1F51455700071361 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B20CDFE81F51455700071361;
+					};
+				};
+			};
+			buildConfigurationList = B20CDFE41F51455700071361 /* Build configuration list for PBXProject "Converge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20CDFE01F51455700071361;
+			productRefGroup = B20CDFEA1F51455700071361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20CDFE81F51455700071361 /* Converge */,
+				B20CE0041F51455700071361 /* ConvergeTests */,
+				B20CE00F1F51455700071361 /* ConvergeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20CDFE71F51455700071361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CDFFF1F51455700071361 /* LaunchScreen.storyboard in Resources */,
+				B20CE09C1F51482900071361 /* Assets.xcassets in Resources */,
+				B20CE0B11F514F2B00071361 /* Cities.plist in Resources */,
+				B20CDFF71F51455700071361 /* Main.storyboard in Resources */,
+				B20CE09E1F51483E00071361 /* agreement.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CE0031F51455700071361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CE00E1F51455700071361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFFFC3BDCD3932454061AAA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Converge/Pods-Converge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B78EA7EBB1B9069E1467C382 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Converge/Pods-Converge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAFAA81E6279828FB1E7975 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20CDFE51F51455700071361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CE08F1F51482900071361 /* RSADataSigner.m in Sources */,
+				B20CE0891F51482900071361 /* base64.m in Sources */,
+				B20CE0871F51482900071361 /* Order.m in Sources */,
+				B20CE08C1F51482900071361 /* MD5DataSigner.m in Sources */,
+				B20CE09B1F51482900071361 /* Utilities.m in Sources */,
+				B20CDFF11F51455700071361 /* AppDelegate.m in Sources */,
+				B20CE0981F51482900071361 /* RequestAPI.m in Sources */,
+				B20CE07B1F51482900071361 /* bitstream.m in Sources */,
+				B20CE08D1F51482900071361 /* NSDataEx.m in Sources */,
+				B20CE08E1F51482900071361 /* openssl_wrapper.m in Sources */,
+				B20CE0831F51482900071361 /* SKTag.m in Sources */,
+				B20CE0991F51482900071361 /* StorageMgr.m in Sources */,
+				B20CE0951F51482900071361 /* NSDate+Utility.m in Sources */,
+				B20CE0971F51482900071361 /* NSString+Crypt.m in Sources */,
+				B20CE0841F51482900071361 /* SKTagButton.m in Sources */,
+				B20CE08A1F51482900071361 /* DataSigner.m in Sources */,
+				B20CE0791F51482900071361 /* DOPDropDownMenu.m in Sources */,
+				B20CE0821F51482900071361 /* BasicEncodingRules.m in Sources */,
+				B20CE0941F51482900071361 /* NSData+Base64.m in Sources */,
+				B20CE0901F51482900071361 /* RSADataVerifier.m in Sources */,
+				B20CE07F1F51482900071361 /* qrspec.m in Sources */,
+				B20CE07C1F51482900071361 /* mask.m in Sources */,
+				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,
+				B20CE0881F51482900071361 /* GBAlipayManager.m in Sources */,
+				B20CE0921F51482900071361 /* ErrorHandler.m in Sources */,
+				B20CE0861F51482900071361 /* Converge.xcdatamodeld in Sources */,
+				B20CE0811F51482900071361 /* split.m in Sources */,
+				B20CE07E1F51482900071361 /* qrinput.m in Sources */,
+				B20CE0851F51482900071361 /* SKTagView.m in Sources */,
+				B20CE0961F51482900071361 /* NSDateFormatter+Category.m in Sources */,
+				B20CE08B1F51482900071361 /* DataVerifier.m in Sources */,
+				B20CE0911F51482900071361 /* AppAPIClient.m in Sources */,
+				B20CDFEE1F51455700071361 /* main.m in Sources */,
+				B20CE07D1F51482900071361 /* qrencode.m in Sources */,
+				B20CE0931F51482900071361 /* JSONS.m in Sources */,
+				B20CE07A1F51482900071361 /* HMSegmentedControl.m in Sources */,
+				B20CE0801F51482900071361 /* rscode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CE0011F51455700071361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CE00A1F51455700071361 /* ConvergeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CE00C1F51455700071361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CE0151F51455700071361 /* ConvergeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20CE0071F51455700071361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20CDFE81F51455700071361 /* Converge */;
+			targetProxy = B20CE0061F51455700071361 /* PBXContainerItemProxy */;
+		};
+		B20CE0121F51455700071361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20CDFE81F51455700071361 /* Converge */;
+			targetProxy = B20CE0111F51455700071361 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20CDFF51F51455700071361 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20CDFF61F51455700071361 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20CDFFE1F51455700071361 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20CE0171F51455700071361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20CE0181F51455700071361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20CE01A1F51455700071361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84EF30A05B94EA52954C21A3 /* Pods-Converge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Converge",
+				);
+				GCC_PREFIX_HEADER = Converge/PrefixHeader.pch;
+				INFOPLIST_FILE = Converge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Converge",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.yixin.Converge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B20CE01B1F51455700071361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB203EE8A81BD8B8DC92D414 /* Pods-Converge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Converge",
+				);
+				GCC_PREFIX_HEADER = Converge/PrefixHeader.pch;
+				INFOPLIST_FILE = Converge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Converge",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.yixin.Converge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B20CE01D1F51455700071361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConvergeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.yixin.ConvergeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Converge.app/Converge";
+			};
+			name = Debug;
+		};
+		B20CE01E1F51455700071361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConvergeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.yixin.ConvergeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Converge.app/Converge";
+			};
+			name = Release;
+		};
+		B20CE0201F51455700071361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConvergeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.yixin.ConvergeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Converge;
+			};
+			name = Debug;
+		};
+		B20CE0211F51455700071361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConvergeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.yixin.ConvergeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Converge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20CDFE41F51455700071361 /* Build configuration list for PBXProject "Converge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20CE0171F51455700071361 /* Debug */,
+				B20CE0181F51455700071361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20CE0191F51455700071361 /* Build configuration list for PBXNativeTarget "Converge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20CE01A1F51455700071361 /* Debug */,
+				B20CE01B1F51455700071361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20CE01C1F51455700071361 /* Build configuration list for PBXNativeTarget "ConvergeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20CE01D1F51455700071361 /* Debug */,
+				B20CE01E1F51455700071361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20CE01F1F51455700071361 /* Build configuration list for PBXNativeTarget "ConvergeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20CE0201F51455700071361 /* Debug */,
+				B20CE0211F51455700071361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B20CE0461F51482900071361 /* Converge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B20CE0471F51482900071361 /* Converge.xcdatamodel */,
+			);
+			currentVersion = B20CE0471F51482900071361 /* Converge.xcdatamodel */;
+			path = Converge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B20CDFE11F51455700071361 /* Project object */;
+}
