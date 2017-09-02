@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A4BFBE6E8613BFDD42AB418 /* libPods-Converge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */; };
+		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
+		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
+		84B86A811F5A584200CC4782 /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7F1F5A584200CC4782 /* MyInfo.storyboard */; };
+		84B86A841F5A596B00CC4782 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A821F5A596B00CC4782 /* Login.storyboard */; };
 		B20CDFEE1F51455700071361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFED1F51455700071361 /* main.m */; };
 		B20CDFF11F51455700071361 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFF01F51455700071361 /* AppDelegate.m */; };
 		B20CDFF71F51455700071361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20CDFF51F51455700071361 /* Main.storyboard */; };
@@ -80,6 +84,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		84B86A7D1F5A571F00CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Found.storyboard; sourceTree = SOURCE_ROOT; };
+		84B86A801F5A584200CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/MyInfo.storyboard; sourceTree = SOURCE_ROOT; };
+		84B86A831F5A596B00CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Login.storyboard; sourceTree = SOURCE_ROOT; };
 		84EF30A05B94EA52954C21A3 /* Pods-Converge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Converge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Converge/Pods-Converge.debug.xcconfig"; sourceTree = "<group>"; };
 		B20CDFE91F51455700071361 /* Converge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20CDFED1F51455700071361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -478,6 +486,10 @@
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
 				B20CE0781F51482900071361 /* Assets.xcassets */,
+				84B86A791F5A551100CC4782 /* Home.storyboard */,
+				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
+				84B86A7F1F5A584200CC4782 /* MyInfo.storyboard */,
+				84B86A821F5A596B00CC4782 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,9 +605,13 @@
 			files = (
 				B20CDFFF1F51455700071361 /* LaunchScreen.storyboard in Resources */,
 				B20CE09C1F51482900071361 /* Assets.xcassets in Resources */,
+				84B86A811F5A584200CC4782 /* MyInfo.storyboard in Resources */,
 				B20CE0B11F514F2B00071361 /* Cities.plist in Resources */,
+				84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */,
+				84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */,
 				B20CDFF71F51455700071361 /* Main.storyboard in Resources */,
 				B20CE09E1F51483E00071361 /* agreement.txt in Resources */,
+				84B86A841F5A596B00CC4782 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +756,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		84B86A791F5A551100CC4782 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B86A7A1F5A551100CC4782 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		84B86A7C1F5A571F00CC4782 /* Found.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B86A7D1F5A571F00CC4782 /* Base */,
+			);
+			name = Found.storyboard;
+			sourceTree = "<group>";
+		};
+		84B86A7F1F5A584200CC4782 /* MyInfo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B86A801F5A584200CC4782 /* Base */,
+			);
+			name = MyInfo.storyboard;
+			sourceTree = "<group>";
+		};
+		84B86A821F5A596B00CC4782 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B86A831F5A596B00CC4782 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
 		B20CDFF51F51455700071361 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
