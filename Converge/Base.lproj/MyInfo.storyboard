@@ -39,11 +39,13 @@
             </objects>
             <point key="canvasLocation" x="756" y="-286"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--我的-->
         <scene sceneID="orP-5n-vsp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B95-c8-JWe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="Mine" id="twX-jq-hha"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="He7-cE-Vco">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -58,4 +60,7 @@
             <point key="canvasLocation" x="-1390" y="178"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mine" width="25" height="25"/>
+    </resources>
 </document>

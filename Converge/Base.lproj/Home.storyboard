@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jkj-Hg-qaW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jkj-Hg-qaW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -146,11 +146,13 @@
             </objects>
             <point key="canvasLocation" x="1860" y="162.3688155922039"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--首页-->
         <scene sceneID="LGr-8m-Lvq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jkj-Hg-qaW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="Home" id="u1c-MI-5UI"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="diG-w1-JXm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,6 +168,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="30" height="30"/>
         <image name="app_logo" width="480" height="183"/>
         <image name="默认图" width="69" height="46"/>
     </resources>
