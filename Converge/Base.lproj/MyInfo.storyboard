@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B95-c8-JWe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B95-c8-JWe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,12 +24,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="juW-8u-fuA"/>
                     <connections>
-                        <segue destination="ptL-bK-hwH" kind="show" id="dfK-Dn-isX"/>
+                        <segue destination="ptL-bK-hwH" kind="presentation" id="9dg-M8-L0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yf-h7-XaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090" y="99"/>
+            <point key="canvasLocation" x="63" y="218"/>
         </scene>
         <!--Login-->
         <scene sceneID="vqF-dj-BUG">
@@ -37,7 +37,7 @@
                 <viewControllerPlaceholder storyboardName="Login" id="ptL-bK-hwH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfp-ZS-syS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1739" y="121"/>
+            <point key="canvasLocation" x="756" y="-286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="orP-5n-vsp">
@@ -55,7 +55,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0G-CL-58A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="99.400299850074973"/>
+            <point key="canvasLocation" x="-1390" y="178"/>
         </scene>
     </scenes>
 </document>
