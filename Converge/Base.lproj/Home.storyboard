@@ -12,7 +12,7 @@
         <!--首页-->
         <scene sceneID="GEm-bx-dYm">
             <objects>
-                <viewController storyboardIdentifier="Home" title="首页" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a6S-Ml-Mys" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="首页" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a6S-Ml-Mys" customClass="homeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8gX-pk-cvm"/>
                         <viewControllerLayoutGuide type="bottom" id="sut-1y-9tB"/>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocd-B0-IAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032.8" y="142.57871064467767"/>
+            <point key="canvasLocation" x="1081" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m4m-D8-wkI">
@@ -153,7 +153,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGJ-4A-3lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.599999999999994" y="142.57871064467767"/>
+            <point key="canvasLocation" x="287" y="149"/>
         </scene>
     </scenes>
     <resources>

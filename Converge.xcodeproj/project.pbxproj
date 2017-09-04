@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A4BFBE6E8613BFDD42AB418 /* libPods-Converge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */; };
+		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
 		84B86A811F5A584200CC4782 /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7F1F5A584200CC4782 /* MyInfo.storyboard */; };
@@ -84,6 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
+		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		84B86A7D1F5A571F00CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Found.storyboard; sourceTree = SOURCE_ROOT; };
 		84B86A801F5A584200CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/MyInfo.storyboard; sourceTree = SOURCE_ROOT; };
@@ -249,6 +252,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		844309EF1F5D2E67000DED39 /* homeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				844309F01F5D2EA4000DED39 /* homeViewController.h */,
+				844309F11F5D2EA4000DED39 /* homeViewController.m */,
+			);
+			name = homeViewController;
+			sourceTree = "<group>";
+		};
 		B20CDFE01F51455700071361 = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +413,7 @@
 		B20CE0441F51482900071361 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				844309EF1F5D2E67000DED39 /* homeViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -719,6 +732,7 @@
 				B20CDFEE1F51455700071361 /* main.m in Sources */,
 				B20CE07D1F51482900071361 /* qrencode.m in Sources */,
 				B20CE0931F51482900071361 /* JSONS.m in Sources */,
+				844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */,
 				B20CE07A1F51482900071361 /* HMSegmentedControl.m in Sources */,
 				B20CE0801F51482900071361 /* rscode.m in Sources */,
 			);
