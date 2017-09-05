@@ -500,8 +500,8 @@
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
 				B20CE0781F51482900071361 /* Assets.xcassets */,
 				84B86A791F5A551100CC4782 /* Home.storyboard */,
-				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
 				84B86A7F1F5A584200CC4782 /* MyInfo.storyboard */,
+				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
 				7CD059611F5D3B3100006ADF /* Login.storyboard */,
 			);
 			path = View;
