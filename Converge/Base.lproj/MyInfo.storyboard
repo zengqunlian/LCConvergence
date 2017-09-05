@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B95-c8-JWe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B95-c8-JWe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,6 +37,9 @@
                                         <state key="normal" title="点击登录">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="ptL-bK-hwH" kind="presentation" id="hTY-og-iuO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.069450873240000002" green="0.57890074790000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,13 +97,10 @@
                     <navigationItem key="navigationItem" title="我的" id="juW-8u-fuA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yU7-tx-HeD"/>
                     </navigationItem>
-                    <connections>
-                        <segue destination="ptL-bK-hwH" kind="presentation" id="9dg-M8-L0s"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yf-h7-XaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="217.24137931034485"/>
+            <point key="canvasLocation" x="-274" y="238"/>
         </scene>
         <!--我的-->
         <scene sceneID="Rli-M9-dXS">
@@ -310,7 +310,7 @@
                 <viewControllerPlaceholder storyboardName="Login" id="ptL-bK-hwH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfp-ZS-syS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="-286"/>
+            <point key="canvasLocation" x="239" y="-206"/>
         </scene>
         <!--我的-->
         <scene sceneID="orP-5n-vsp">
@@ -319,7 +319,7 @@
                     <tabBarItem key="tabBarItem" title="我的" image="Mine" id="twX-jq-hha"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="He7-cE-Vco">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="He7-cE-Vco">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.069450873240000002" green="0.57890074790000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
