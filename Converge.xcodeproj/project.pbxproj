@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A4BFBE6E8613BFDD42AB418 /* libPods-Converge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */; };
+		7C7984331F5E4F4900174142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7984321F5E4F4900174142 /* Assets.xcassets */; };
 		7CD059631F5D3B3100006ADF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD059611F5D3B3100006ADF /* Login.storyboard */; };
+		840BB9111F5E6D84001EFD2A /* SiginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BB9101F5E6D84001EFD2A /* SiginViewController.m */; };
+		840BB9141F5E6D95001EFD2A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BB9131F5E6D95001EFD2A /* LoginViewController.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
@@ -54,7 +57,6 @@
 		B20CE0991F51482900071361 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0721F51482900071361 /* StorageMgr.m */; };
 		B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0741F51482900071361 /* UIImage+MDQRCode.m */; };
 		B20CE09B1F51482900071361 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CE0761F51482900071361 /* Utilities.m */; };
-		B20CE09C1F51482900071361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20CE0781F51482900071361 /* Assets.xcassets */; };
 		B20CE09E1F51483E00071361 /* agreement.txt in Resources */ = {isa = PBXBuildFile; fileRef = B20CE09D1F51483E00071361 /* agreement.txt */; };
 		B20CE0A51F5148F400071361 /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A01F5148F400071361 /* AlipaySDK.bundle */; };
 		B20CE0A61F5148F400071361 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CE0A11F5148F400071361 /* AlipaySDK.framework */; };
@@ -85,7 +87,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C7984321F5E4F4900174142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../会聚/Converge/View/Assets.xcassets"; sourceTree = "<group>"; };
 		7CD059621F5D3B3100006ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Login.storyboard; sourceTree = SOURCE_ROOT; };
+		840BB90F1F5E6D84001EFD2A /* SiginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiginViewController.h; sourceTree = SOURCE_ROOT; };
+		840BB9101F5E6D84001EFD2A /* SiginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiginViewController.m; sourceTree = SOURCE_ROOT; };
+		840BB9121F5E6D95001EFD2A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = SOURCE_ROOT; };
+		840BB9131F5E6D95001EFD2A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = SOURCE_ROOT; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -177,7 +184,6 @@
 		B20CE0741F51482900071361 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 		B20CE0751F51482900071361 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		B20CE0761F51482900071361 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		B20CE0781F51482900071361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20CE09D1F51483E00071361 /* agreement.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agreement.txt; sourceTree = "<group>"; };
 		B20CE09F1F51486500071361 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B20CE0A01F5148F400071361 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = Converge/AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -250,6 +256,17 @@
 				B8E102C1CDA3A60A36CB5F58 /* libPods-Converge.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840BB90E1F5E6D50001EFD2A /* SiginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840BB90F1F5E6D84001EFD2A /* SiginViewController.h */,
+				840BB9101F5E6D84001EFD2A /* SiginViewController.m */,
+				840BB9121F5E6D95001EFD2A /* LoginViewController.h */,
+				840BB9131F5E6D95001EFD2A /* LoginViewController.m */,
+			);
+			name = SiginViewController;
 			sourceTree = "<group>";
 		};
 		844309EF1F5D2E67000DED39 /* homeViewController */ = {
@@ -413,6 +430,7 @@
 		B20CE0441F51482900071361 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				840BB90E1F5E6D50001EFD2A /* SiginViewController */,
 				844309EF1F5D2E67000DED39 /* homeViewController */,
 			);
 			path = Controller;
@@ -496,9 +514,9 @@
 		B20CE0771F51482900071361 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7C7984321F5E4F4900174142 /* Assets.xcassets */,
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
-				B20CE0781F51482900071361 /* Assets.xcassets */,
 				84B86A791F5A551100CC4782 /* Home.storyboard */,
 				84B86A7F1F5A584200CC4782 /* MyInfo.storyboard */,
 				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
@@ -617,13 +635,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20CDFFF1F51455700071361 /* LaunchScreen.storyboard in Resources */,
-				B20CE09C1F51482900071361 /* Assets.xcassets in Resources */,
 				84B86A811F5A584200CC4782 /* MyInfo.storyboard in Resources */,
 				B20CE0B11F514F2B00071361 /* Cities.plist in Resources */,
 				84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */,
 				84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */,
 				B20CDFF71F51455700071361 /* Main.storyboard in Resources */,
 				B20CE09E1F51483E00071361 /* agreement.txt in Resources */,
+				7C7984331F5E4F4900174142 /* Assets.xcassets in Resources */,
 				7CD059631F5D3B3100006ADF /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,8 +739,10 @@
 				B20CE07C1F51482900071361 /* mask.m in Sources */,
 				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,
 				B20CE0881F51482900071361 /* GBAlipayManager.m in Sources */,
+				840BB9141F5E6D95001EFD2A /* LoginViewController.m in Sources */,
 				B20CE0921F51482900071361 /* ErrorHandler.m in Sources */,
 				B20CE0861F51482900071361 /* Converge.xcdatamodeld in Sources */,
+				840BB9111F5E6D84001EFD2A /* SiginViewController.m in Sources */,
 				B20CE0811F51482900071361 /* split.m in Sources */,
 				B20CE07E1F51482900071361 /* qrinput.m in Sources */,
 				B20CE0851F51482900071361 /* SKTagView.m in Sources */,
