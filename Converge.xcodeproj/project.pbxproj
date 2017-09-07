@@ -11,6 +11,11 @@
 		7CD059631F5D3B3100006ADF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD059611F5D3B3100006ADF /* Login.storyboard */; };
 		840BB9111F5E6D84001EFD2A /* SiginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BB9101F5E6D84001EFD2A /* SiginViewController.m */; };
 		840BB9141F5E6D95001EFD2A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BB9131F5E6D95001EFD2A /* LoginViewController.m */; };
+		841E387D1F61196A00A6CB28 /* homeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E387C1F61196A00A6CB28 /* homeTableViewCell.m */; };
+		841E38801F61197E00A6CB28 /* experienceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E387F1F61197E00A6CB28 /* experienceTableViewCell.m */; };
+		841E38841F611AED00A6CB28 /* homeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38831F611AED00A6CB28 /* homeModel.m */; };
+		841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38861F611B2800A6CB28 /* experienceViewController.m */; };
+		841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38891F611B3700A6CB28 /* detailViewController.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
@@ -92,6 +97,16 @@
 		840BB9101F5E6D84001EFD2A /* SiginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiginViewController.m; sourceTree = SOURCE_ROOT; };
 		840BB9121F5E6D95001EFD2A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = SOURCE_ROOT; };
 		840BB9131F5E6D95001EFD2A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = SOURCE_ROOT; };
+		841E387B1F61196A00A6CB28 /* homeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeTableViewCell.h; sourceTree = "<group>"; };
+		841E387C1F61196A00A6CB28 /* homeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeTableViewCell.m; sourceTree = "<group>"; };
+		841E387E1F61197E00A6CB28 /* experienceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experienceTableViewCell.h; sourceTree = "<group>"; };
+		841E387F1F61197E00A6CB28 /* experienceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = experienceTableViewCell.m; sourceTree = "<group>"; };
+		841E38821F611AED00A6CB28 /* homeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeModel.h; sourceTree = "<group>"; };
+		841E38831F611AED00A6CB28 /* homeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeModel.m; sourceTree = "<group>"; };
+		841E38851F611B2800A6CB28 /* experienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experienceViewController.h; sourceTree = SOURCE_ROOT; };
+		841E38861F611B2800A6CB28 /* experienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = experienceViewController.m; sourceTree = SOURCE_ROOT; };
+		841E38881F611B3700A6CB28 /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = SOURCE_ROOT; };
+		841E38891F611B3700A6CB28 /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = SOURCE_ROOT; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -269,11 +284,35 @@
 			name = SiginViewController;
 			sourceTree = "<group>";
 		};
+		841E387A1F61194900A6CB28 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				841E387B1F61196A00A6CB28 /* homeTableViewCell.h */,
+				841E387C1F61196A00A6CB28 /* homeTableViewCell.m */,
+				841E387E1F61197E00A6CB28 /* experienceTableViewCell.h */,
+				841E387F1F61197E00A6CB28 /* experienceTableViewCell.m */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		841E38811F611AD400A6CB28 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				841E38821F611AED00A6CB28 /* homeModel.h */,
+				841E38831F611AED00A6CB28 /* homeModel.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		844309EF1F5D2E67000DED39 /* homeViewController */ = {
 			isa = PBXGroup;
 			children = (
 				844309F01F5D2EA4000DED39 /* homeViewController.h */,
 				844309F11F5D2EA4000DED39 /* homeViewController.m */,
+				841E38851F611B2800A6CB28 /* experienceViewController.h */,
+				841E38861F611B2800A6CB28 /* experienceViewController.m */,
+				841E38881F611B3700A6CB28 /* detailViewController.h */,
+				841E38891F611B3700A6CB28 /* detailViewController.m */,
 			);
 			name = homeViewController;
 			sourceTree = "<group>";
@@ -439,6 +478,7 @@
 		B20CE0451F51482900071361 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				841E38811F611AD400A6CB28 /* Home */,
 				B20CE0461F51482900071361 /* Converge.xcdatamodeld */,
 				B20CE0481F51482900071361 /* Order.h */,
 				B20CE0491F51482900071361 /* Order.m */,
@@ -514,6 +554,7 @@
 		B20CE0771F51482900071361 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				841E387A1F61194900A6CB28 /* HomeView */,
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
 				84B86A791F5A551100CC4782 /* Home.storyboard */,
@@ -715,6 +756,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */,
 				B20CE08F1F51482900071361 /* RSADataSigner.m in Sources */,
 				B20CE0891F51482900071361 /* base64.m in Sources */,
 				B20CE0871F51482900071361 /* Order.m in Sources */,
@@ -722,6 +764,7 @@
 				B20CE09B1F51482900071361 /* Utilities.m in Sources */,
 				B20CDFF11F51455700071361 /* AppDelegate.m in Sources */,
 				B20CE0981F51482900071361 /* RequestAPI.m in Sources */,
+				841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */,
 				B20CE07B1F51482900071361 /* bitstream.m in Sources */,
 				B20CE08D1F51482900071361 /* NSDataEx.m in Sources */,
 				B20CE08E1F51482900071361 /* openssl_wrapper.m in Sources */,
@@ -741,6 +784,8 @@
 				B20CE0881F51482900071361 /* GBAlipayManager.m in Sources */,
 				840BB9141F5E6D95001EFD2A /* LoginViewController.m in Sources */,
 				B20CE0921F51482900071361 /* ErrorHandler.m in Sources */,
+				841E387D1F61196A00A6CB28 /* homeTableViewCell.m in Sources */,
+				841E38841F611AED00A6CB28 /* homeModel.m in Sources */,
 				B20CE0861F51482900071361 /* Converge.xcdatamodeld in Sources */,
 				840BB9111F5E6D84001EFD2A /* SiginViewController.m in Sources */,
 				B20CE0811F51482900071361 /* split.m in Sources */,
@@ -753,6 +798,7 @@
 				B20CE07D1F51482900071361 /* qrencode.m in Sources */,
 				B20CE0931F51482900071361 /* JSONS.m in Sources */,
 				844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */,
+				841E38801F61197E00A6CB28 /* experienceTableViewCell.m in Sources */,
 				B20CE07A1F51482900071361 /* HMSegmentedControl.m in Sources */,
 				B20CE0801F51482900071361 /* rscode.m in Sources */,
 			);
