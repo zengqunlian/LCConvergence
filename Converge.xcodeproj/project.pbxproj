@@ -16,6 +16,7 @@
 		841E38841F611AED00A6CB28 /* homeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38831F611AED00A6CB28 /* homeModel.m */; };
 		841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38861F611B2800A6CB28 /* experienceViewController.m */; };
 		841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38891F611B3700A6CB28 /* detailViewController.m */; };
+		841E388D1F61314A00A6CB28 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E388C1F61314A00A6CB28 /* UserModel.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
@@ -107,6 +108,8 @@
 		841E38861F611B2800A6CB28 /* experienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = experienceViewController.m; sourceTree = SOURCE_ROOT; };
 		841E38881F611B3700A6CB28 /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = SOURCE_ROOT; };
 		841E38891F611B3700A6CB28 /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = SOURCE_ROOT; };
+		841E388B1F61314A00A6CB28 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		841E388C1F61314A00A6CB28 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -298,6 +301,8 @@
 		841E38811F611AD400A6CB28 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				841E388B1F61314A00A6CB28 /* UserModel.h */,
+				841E388C1F61314A00A6CB28 /* UserModel.m */,
 				841E38821F611AED00A6CB28 /* homeModel.h */,
 				841E38831F611AED00A6CB28 /* homeModel.m */,
 			);
@@ -774,6 +779,7 @@
 				B20CE0981F51482900071361 /* RequestAPI.m in Sources */,
 				841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */,
 				B20CE07B1F51482900071361 /* bitstream.m in Sources */,
+				841E388D1F61314A00A6CB28 /* UserModel.m in Sources */,
 				B20CE08D1F51482900071361 /* NSDataEx.m in Sources */,
 				B20CE08E1F51482900071361 /* openssl_wrapper.m in Sources */,
 				B20CE0831F51482900071361 /* SKTag.m in Sources */,
