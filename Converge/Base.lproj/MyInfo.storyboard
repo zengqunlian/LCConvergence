@@ -61,19 +61,36 @@
                                 </constraints>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="6WU-wt-059">
-                                    <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="116" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxG-9G-tSf">
-                                            <rect key="frame" x="125" y="6" width="46" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-79-872">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="zUr-W5-lV0"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxG-9G-tSf">
+                                            <rect key="frame" x="60" y="15" width="50" height="30"/>
                                             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="fQv-Q3-kA6"/>
+                                                <constraint firstAttribute="width" constant="50" id="yaX-0l-BeJ"/>
+                                            </constraints>
                                             <state key="normal" title="设置">
                                                 <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             </state>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="kdf-79-872" firstAttribute="top" secondItem="6WU-wt-059" secondAttribute="top" id="KBe-wb-6Jm"/>
+                                        <constraint firstItem="BxG-9G-tSf" firstAttribute="leading" secondItem="6WU-wt-059" secondAttribute="leading" constant="60" id="PHI-XL-cD7"/>
+                                        <constraint firstItem="BxG-9G-tSf" firstAttribute="centerY" secondItem="6WU-wt-059" secondAttribute="centerY" id="T97-8f-rJh"/>
+                                        <constraint firstItem="kdf-79-872" firstAttribute="leading" secondItem="6WU-wt-059" secondAttribute="leading" id="ajE-bQ-ZB0"/>
+                                        <constraint firstAttribute="trailing" secondItem="kdf-79-872" secondAttribute="trailing" id="otQ-Bv-Srd"/>
+                                    </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyInfoCell" textLabel="XXT-It-Jxv" style="IBUITableViewCellStyleDefault" id="S1t-N6-QZO">
@@ -83,7 +100,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="我的活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XXT-It-Jxv">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XXT-It-Jxv">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -98,7 +115,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="844-cs-YLu" id="iPw-tM-4Is">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -123,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yf-h7-XaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="178"/>
+            <point key="canvasLocation" x="-674.39999999999998" y="177.66116941529236"/>
         </scene>
         <!--我的-->
         <scene sceneID="Rli-M9-dXS">

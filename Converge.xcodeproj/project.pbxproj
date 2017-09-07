@@ -317,6 +317,14 @@
 			name = homeViewController;
 			sourceTree = "<group>";
 		};
+		84E911091F6125F800281B0B /* MyInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E910F41F60DDB100281B0B /* MyInfo.storyboard */,
+			);
+			name = MyInfoViewController;
+			sourceTree = "<group>";
+		};
 		B20CDFE01F51455700071361 = {
 			isa = PBXGroup;
 			children = (
@@ -469,6 +477,7 @@
 		B20CE0441F51482900071361 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84E911091F6125F800281B0B /* MyInfoViewController */,
 				840BB90E1F5E6D50001EFD2A /* SiginViewController */,
 				844309EF1F5D2E67000DED39 /* homeViewController */,
 			);
@@ -558,7 +567,6 @@
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
 				84B86A791F5A551100CC4782 /* Home.storyboard */,
-				84E910F41F60DDB100281B0B /* MyInfo.storyboard */,
 				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
 				7CD059611F5D3B3100006ADF /* Login.storyboard */,
 				84E910F21F60DBC000281B0B /* Assets.xcassets */,
@@ -866,6 +874,7 @@
 				84E910F51F60DDB100281B0B /* Base */,
 			);
 			name = MyInfo.storyboard;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		B20CDFF51F51455700071361 /* Main.storyboard */ = {
