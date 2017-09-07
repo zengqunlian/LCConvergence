@@ -38,10 +38,10 @@
 }
 - (void)naviConfig {
     //设置导航条标题文字
-    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
+    //self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
     self.navigationItem.title = @"首页";
     //设置导航条颜色（风格颜色）
-    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
     //设置导航条标题颜色
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     //设置导航条是否隐藏.
