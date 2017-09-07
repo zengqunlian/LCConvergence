@@ -1,18 +1,18 @@
 //
-//  MyInfoViewController.m
+//  ActivityViewController.m
 //  Converge
 //
 //  Created by admin on 2017/9/7.
 //  Copyright © 2017年 Yixin studio. All rights reserved.
 //
 
-#import "MyInfoViewController.h"
+#import "ActivityViewController.h"
 
-@interface MyInfoViewController ()
+@interface ActivityViewController ()
 
 @end
 
-@implementation MyInfoViewController
+@implementation ActivityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
