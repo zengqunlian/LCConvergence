@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我参与的活动-->
+        <scene sceneID="Rv4-K2-sMG">
+            <objects>
+                <viewController id="Ia0-6s-rfY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVb-bP-r5P"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lgg-Eu-8Qe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fyA-EJ-Fkc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bM9-rd-tbg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FDZ-RT-c12">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FDZ-RT-c12" id="vPE-1E-LKf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bM9-rd-tbg" secondAttribute="bottom" id="Vyh-Dm-0Hg"/>
+                            <constraint firstAttribute="trailing" secondItem="bM9-rd-tbg" secondAttribute="trailing" id="Xxm-w1-6Fj"/>
+                            <constraint firstItem="bM9-rd-tbg" firstAttribute="top" secondItem="fyA-EJ-Fkc" secondAttribute="top" id="YdE-JS-pet"/>
+                            <constraint firstItem="bM9-rd-tbg" firstAttribute="leading" secondItem="fyA-EJ-Fkc" secondAttribute="leading" id="wMQ-CY-MUv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我参与的活动" id="der-sm-DbD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPW-Kh-Z3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="166.8665667166417"/>
+        </scene>
+        <!--我的活动-->
+        <scene sceneID="yjR-wy-aTi">
+            <objects>
+                <navigationController title="我的活动" automaticallyAdjustsScrollViewInsets="NO" id="69G-dJ-gEy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x8a-a0-tpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ia0-6s-rfY" kind="relationship" relationship="rootViewController" id="XFN-AS-rR9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4E-38-AMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183.19999999999999" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>
