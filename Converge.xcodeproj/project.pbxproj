@@ -17,6 +17,7 @@
 		841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38861F611B2800A6CB28 /* experienceViewController.m */; };
 		841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38891F611B3700A6CB28 /* detailViewController.m */; };
 		841E388D1F61314A00A6CB28 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E388C1F61314A00A6CB28 /* UserModel.m */; };
+		841E38911F61365500A6CB28 /* detailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38901F61365500A6CB28 /* detailModel.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
@@ -110,6 +111,8 @@
 		841E38891F611B3700A6CB28 /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = SOURCE_ROOT; };
 		841E388B1F61314A00A6CB28 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		841E388C1F61314A00A6CB28 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		841E388F1F61365500A6CB28 /* detailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailModel.h; sourceTree = "<group>"; };
+		841E38901F61365500A6CB28 /* detailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailModel.m; sourceTree = "<group>"; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -309,6 +312,15 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
+		841E388E1F61362700A6CB28 /* DetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				841E388F1F61365500A6CB28 /* detailModel.h */,
+				841E38901F61365500A6CB28 /* detailModel.m */,
+			);
+			name = DetailModel;
+			sourceTree = "<group>";
+		};
 		844309EF1F5D2E67000DED39 /* homeViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +504,7 @@
 		B20CE0451F51482900071361 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				841E388E1F61362700A6CB28 /* DetailModel */,
 				841E38811F611AD400A6CB28 /* Home */,
 				B20CE0461F51482900071361 /* Converge.xcdatamodeld */,
 				B20CE0481F51482900071361 /* Order.h */,
@@ -813,6 +826,7 @@
 				B20CE0931F51482900071361 /* JSONS.m in Sources */,
 				844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */,
 				841E38801F61197E00A6CB28 /* experienceTableViewCell.m in Sources */,
+				841E38911F61365500A6CB28 /* detailModel.m in Sources */,
 				B20CE07A1F51482900071361 /* HMSegmentedControl.m in Sources */,
 				B20CE0801F51482900071361 /* rscode.m in Sources */,
 			);

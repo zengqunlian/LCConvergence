@@ -7,7 +7,7 @@
 //
 
 #import "detailViewController.h"
-
+#import "detailModel.h"
 @interface detailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *experienceImageView;
 @property (weak, nonatomic) IBOutlet UILabel *experienceTitleLabel;
@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *num2;//会员
 @property (weak, nonatomic) IBOutlet UILabel *num3;//教练
 @property (weak, nonatomic) IBOutlet UITextView *clubIntroduce;//会所介绍
+@property (strong,nonatomic)NSMutableArray *clubArr;
 
 
 @end
@@ -31,6 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self naviConfig];
+    [self request];
+    [self set];
     // Do any additional setup after loading the view.
 }
 
@@ -38,6 +41,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - nav
 - (void)naviConfig {
     //设置导航条标题文字
         self.navigationItem.title = @"会所信息";
@@ -52,15 +56,21 @@
     //设置是否需要毛玻璃效果
     self.navigationController.navigationBar.translucent = YES;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)set{
+   
+    _clubArr = [NSMutableArray new];
 }
-*/
+#pragma mark - request
+-(void)request{
+    NSDictionary *para = @{@"clubKeyId":@4};
+    [RequestAPI requestURL:@"/clubController/getClubDetails" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
+        NSLog(@"responseObject: %@",responseObject);
+        if([responseObject[@"resultFlag"]integerValue] == 8001){
+                                                 }
+    } failure:^(NSInteger statusCode, NSError *error) {
+        NSLog(@"%ld",(long)statusCode);
+    }];
+    
+}
 
 @end

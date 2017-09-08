@@ -36,6 +36,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - nav
 - (void)naviConfig {
     //设置导航条标题文字
     //self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
@@ -84,9 +85,9 @@
         // NSDictionary *dict = _homeArr[indexPath.section];
         homeModel *homeModel = _clubArr[indexPath.section];
         NSURL *url = [NSURL URLWithString:homeModel.advImage];
-        NSLog(@"456%@",_advArr);
-        NSLog(@"456%@",_clubArr);
-        NSLog(@"321%@",homeModel.advImage);
+//        NSLog(@"456%@",_advArr);
+//        NSLog(@"456%@",_clubArr);
+//        NSLog(@"321%@",homeModel.advImage);
         [cell.homeImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"莫梵"]];
         //cell.homeImageView = homeModel.advImage;
         //cell.titleLabel.text = homeModel.title;
@@ -114,7 +115,7 @@
 -(void)request{
     NSDictionary *para = @{@"city":_city,@"jing":@"31.568",@"wei":@"120.299",@"page":@1,@"perPage":@10};
     [RequestAPI requestURL:@"/homepage/choice" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-        //NSLog(@"responseObject: %@",responseObject);
+       // NSLog(@"responseObject: %@",responseObject);
         if([responseObject[@"resultFlag"]integerValue] == 8001){
             NSArray *model =responseObject[@"advertisement"];
             for(NSDictionary *dict in model){
