@@ -15,13 +15,17 @@
 		841E38801F61197E00A6CB28 /* experienceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E387F1F61197E00A6CB28 /* experienceTableViewCell.m */; };
 		841E38841F611AED00A6CB28 /* homeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38831F611AED00A6CB28 /* homeModel.m */; };
 		841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38861F611B2800A6CB28 /* experienceViewController.m */; };
-		841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38891F611B3700A6CB28 /* detailViewController.m */; };
 		841E388D1F61314A00A6CB28 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E388C1F61314A00A6CB28 /* UserModel.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
+		847ACF881F622752000ED30D /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF871F622752000ED30D /* ActivityDetailViewController.m */; };
+		847ACF8B1F6227A2000ED30D /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF8A1F6227A2000ED30D /* detailViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
 		84E910F31F60DBC000281B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E910F21F60DBC000281B0B /* Assets.xcassets */; };
 		84E910F61F60DDB100281B0B /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E910F41F60DDB100281B0B /* MyInfo.storyboard */; };
+		84E9112A1F616A7200281B0B /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E911281F616A7200281B0B /* Activity.storyboard */; };
+		84E9112D1F616ACD00281B0B /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9112C1F616ACD00281B0B /* ActivityViewController.m */; };
+		84E9113A1F616BEB00281B0B /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E911391F616BEB00281B0B /* MyInfoViewController.m */; };
 		B20CDFEE1F51455700071361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFED1F51455700071361 /* main.m */; };
 		B20CDFF11F51455700071361 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFF01F51455700071361 /* AppDelegate.m */; };
 		B20CDFF71F51455700071361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20CDFF51F51455700071361 /* Main.storyboard */; };
@@ -106,16 +110,23 @@
 		841E38831F611AED00A6CB28 /* homeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeModel.m; sourceTree = "<group>"; };
 		841E38851F611B2800A6CB28 /* experienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experienceViewController.h; sourceTree = SOURCE_ROOT; };
 		841E38861F611B2800A6CB28 /* experienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = experienceViewController.m; sourceTree = SOURCE_ROOT; };
-		841E38881F611B3700A6CB28 /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = SOURCE_ROOT; };
-		841E38891F611B3700A6CB28 /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = SOURCE_ROOT; };
 		841E388B1F61314A00A6CB28 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		841E388C1F61314A00A6CB28 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
+		847ACF861F622752000ED30D /* ActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		847ACF871F622752000ED30D /* ActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		847ACF891F6227A2000ED30D /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = SOURCE_ROOT; };
+		847ACF8A1F6227A2000ED30D /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		84B86A7D1F5A571F00CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Found.storyboard; sourceTree = SOURCE_ROOT; };
 		84E910F21F60DBC000281B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E910F51F60DDB100281B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/MyInfo.storyboard; sourceTree = SOURCE_ROOT; };
+		84E911291F616A7200281B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Activity.storyboard; sourceTree = SOURCE_ROOT; };
+		84E9112B1F616ACD00281B0B /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = SOURCE_ROOT; };
+		84E9112C1F616ACD00281B0B /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = SOURCE_ROOT; };
+		84E911381F616BEB00281B0B /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = SOURCE_ROOT; };
+		84E911391F616BEB00281B0B /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = SOURCE_ROOT; };
 		84EF30A05B94EA52954C21A3 /* Pods-Converge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Converge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Converge/Pods-Converge.debug.xcconfig"; sourceTree = "<group>"; };
 		B20CDFE91F51455700071361 /* Converge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20CDFED1F51455700071361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -279,6 +290,7 @@
 		840BB90E1F5E6D50001EFD2A /* SiginViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7CD059611F5D3B3100006ADF /* Login.storyboard */,
 				840BB90F1F5E6D84001EFD2A /* SiginViewController.h */,
 				840BB9101F5E6D84001EFD2A /* SiginViewController.m */,
 				840BB9121F5E6D95001EFD2A /* LoginViewController.h */,
@@ -312,12 +324,13 @@
 		844309EF1F5D2E67000DED39 /* homeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84B86A791F5A551100CC4782 /* Home.storyboard */,
 				844309F01F5D2EA4000DED39 /* homeViewController.h */,
 				844309F11F5D2EA4000DED39 /* homeViewController.m */,
 				841E38851F611B2800A6CB28 /* experienceViewController.h */,
 				841E38861F611B2800A6CB28 /* experienceViewController.m */,
-				841E38881F611B3700A6CB28 /* detailViewController.h */,
-				841E38891F611B3700A6CB28 /* detailViewController.m */,
+				847ACF891F6227A2000ED30D /* detailViewController.h */,
+				847ACF8A1F6227A2000ED30D /* detailViewController.m */,
 			);
 			name = homeViewController;
 			sourceTree = "<group>";
@@ -326,8 +339,30 @@
 			isa = PBXGroup;
 			children = (
 				84E910F41F60DDB100281B0B /* MyInfo.storyboard */,
+				84E911381F616BEB00281B0B /* MyInfoViewController.h */,
+				84E911391F616BEB00281B0B /* MyInfoViewController.m */,
 			);
 			name = MyInfoViewController;
+			sourceTree = "<group>";
+		};
+		84E9112E1F616ADA00281B0B /* ActivityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E911281F616A7200281B0B /* Activity.storyboard */,
+				84E9112B1F616ACD00281B0B /* ActivityViewController.h */,
+				84E9112C1F616ACD00281B0B /* ActivityViewController.m */,
+				847ACF861F622752000ED30D /* ActivityDetailViewController.h */,
+				847ACF871F622752000ED30D /* ActivityDetailViewController.m */,
+			);
+			name = ActivityViewController;
+			sourceTree = "<group>";
+		};
+		84E9113B1F616C0300281B0B /* FoundViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
+			);
+			name = FoundViewController;
 			sourceTree = "<group>";
 		};
 		B20CDFE01F51455700071361 = {
@@ -482,6 +517,8 @@
 		B20CE0441F51482900071361 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84E9113B1F616C0300281B0B /* FoundViewController */,
+				84E9112E1F616ADA00281B0B /* ActivityViewController */,
 				84E911091F6125F800281B0B /* MyInfoViewController */,
 				840BB90E1F5E6D50001EFD2A /* SiginViewController */,
 				844309EF1F5D2E67000DED39 /* homeViewController */,
@@ -571,9 +608,6 @@
 				841E387A1F61194900A6CB28 /* HomeView */,
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
-				84B86A791F5A551100CC4782 /* Home.storyboard */,
-				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
-				7CD059611F5D3B3100006ADF /* Login.storyboard */,
 				84E910F21F60DBC000281B0B /* Assets.xcassets */,
 			);
 			path = View;
@@ -695,6 +729,7 @@
 				B20CDFF71F51455700071361 /* Main.storyboard in Resources */,
 				B20CE09E1F51483E00071361 /* agreement.txt in Resources */,
 				84E910F31F60DBC000281B0B /* Assets.xcassets in Resources */,
+				84E9112A1F616A7200281B0B /* Activity.storyboard in Resources */,
 				84E910F61F60DDB100281B0B /* MyInfo.storyboard in Resources */,
 				7CD059631F5D3B3100006ADF /* Login.storyboard in Resources */,
 			);
@@ -775,9 +810,9 @@
 				B20CE0871F51482900071361 /* Order.m in Sources */,
 				B20CE08C1F51482900071361 /* MD5DataSigner.m in Sources */,
 				B20CE09B1F51482900071361 /* Utilities.m in Sources */,
+				84E9113A1F616BEB00281B0B /* MyInfoViewController.m in Sources */,
 				B20CDFF11F51455700071361 /* AppDelegate.m in Sources */,
 				B20CE0981F51482900071361 /* RequestAPI.m in Sources */,
-				841E388A1F611B3700A6CB28 /* detailViewController.m in Sources */,
 				B20CE07B1F51482900071361 /* bitstream.m in Sources */,
 				841E388D1F61314A00A6CB28 /* UserModel.m in Sources */,
 				B20CE08D1F51482900071361 /* NSDataEx.m in Sources */,
@@ -795,10 +830,12 @@
 				B20CE07F1F51482900071361 /* qrspec.m in Sources */,
 				B20CE07C1F51482900071361 /* mask.m in Sources */,
 				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,
+				847ACF881F622752000ED30D /* ActivityDetailViewController.m in Sources */,
 				B20CE0881F51482900071361 /* GBAlipayManager.m in Sources */,
 				840BB9141F5E6D95001EFD2A /* LoginViewController.m in Sources */,
 				B20CE0921F51482900071361 /* ErrorHandler.m in Sources */,
 				841E387D1F61196A00A6CB28 /* homeTableViewCell.m in Sources */,
+				847ACF8B1F6227A2000ED30D /* detailViewController.m in Sources */,
 				841E38841F611AED00A6CB28 /* homeModel.m in Sources */,
 				B20CE0861F51482900071361 /* Converge.xcdatamodeld in Sources */,
 				840BB9111F5E6D84001EFD2A /* SiginViewController.m in Sources */,
@@ -810,6 +847,7 @@
 				B20CE0911F51482900071361 /* AppAPIClient.m in Sources */,
 				B20CDFEE1F51455700071361 /* main.m in Sources */,
 				B20CE07D1F51482900071361 /* qrencode.m in Sources */,
+				84E9112D1F616ACD00281B0B /* ActivityViewController.m in Sources */,
 				B20CE0931F51482900071361 /* JSONS.m in Sources */,
 				844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */,
 				841E38801F61197E00A6CB28 /* experienceTableViewCell.m in Sources */,
@@ -856,6 +894,7 @@
 				7CD059621F5D3B3100006ADF /* Base */,
 			);
 			name = Login.storyboard;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		84B86A791F5A551100CC4782 /* Home.storyboard */ = {
@@ -864,6 +903,7 @@
 				84B86A7A1F5A551100CC4782 /* Base */,
 			);
 			name = Home.storyboard;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		84B86A7C1F5A571F00CC4782 /* Found.storyboard */ = {
@@ -872,6 +912,7 @@
 				84B86A7D1F5A571F00CC4782 /* Base */,
 			);
 			name = Found.storyboard;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		84E910F41F60DDB100281B0B /* MyInfo.storyboard */ = {
@@ -880,6 +921,15 @@
 				84E910F51F60DDB100281B0B /* Base */,
 			);
 			name = MyInfo.storyboard;
+			path = ../View;
+			sourceTree = "<group>";
+		};
+		84E911281F616A7200281B0B /* Activity.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E911291F616A7200281B0B /* Base */,
+			);
+			name = Activity.storyboard;
 			path = ../View;
 			sourceTree = "<group>";
 		};

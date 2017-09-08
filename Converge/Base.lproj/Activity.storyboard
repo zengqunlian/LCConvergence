@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="1542" y="142"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Activity Detail View Controller-->
         <scene sceneID="51r-8Z-nsh">
             <objects>
-                <viewController id="A6k-gC-U0C" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController id="A6k-gC-U0C" customClass="ActivityDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qiw-zk-6Ui"/>
                         <viewControllerLayoutGuide type="bottom" id="Ih7-FZ-5tK"/>

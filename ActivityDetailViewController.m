@@ -1,18 +1,18 @@
 //
-//  detailViewController.m
+//  ActivityDetailViewController.m
 //  Converge
 //
 //  Created by admin on 2017/9/8.
 //  Copyright © 2017年 Yixin studio. All rights reserved.
 //
 
-#import "detailViewController.h"
+#import "ActivityDetailViewController.h"
 
-@interface detailViewController ()
+@interface ActivityDetailViewController ()
 
 @end
 
-@implementation detailViewController
+@implementation ActivityDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

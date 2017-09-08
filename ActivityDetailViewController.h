@@ -1,5 +1,5 @@
 //
-//  detailViewController.h
+//  ActivityDetailViewController.h
 //  Converge
 //
 //  Created by admin on 2017/9/8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface detailViewController : UIViewController
+@interface ActivityDetailViewController : UIViewController
 
 @end
