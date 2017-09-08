@@ -38,12 +38,11 @@
     return uniqueIdentifier;
 }
 
-+ (id)getStoryboardInstanceByIdentity:(NSString*)identity
++ (id)getStoryboardInstance:(NSString *)sbName byIdentity:(NSString *)identity
 {
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:sbName bundle:[NSBundle mainBundle]];
     return [storyboard instantiateViewControllerWithIdentifier:identity];
 }
-
 + (void)popUpAlertViewWithMsg:(NSString *)msg andTitle:(NSString* )title onView:(UIViewController *)vc
 {
     UIAlertController *alertView = [UIAlertController alertControllerWithTitle:title == nil ? @"提示" : title message:msg == nil ? @"操作失败" : msg preferredStyle:UIAlertControllerStyleAlert];
