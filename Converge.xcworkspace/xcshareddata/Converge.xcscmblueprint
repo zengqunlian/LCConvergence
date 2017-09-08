@@ -1,18 +1,22 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E56DC7B",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E2476B3",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E56DC7B" : 9223372036854775807,
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++7F0C284" : 9223372036854775807,
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E2476B3" : 9223372036854775807,
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++2167E47" : 9223372036854775807,
     "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++D1DCF2D" : 9223372036854775807,
-    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++2167E47" : 9223372036854775807
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E56DC7B" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2CC550CF-87AC-408F-94BF-EC8101B0D486",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E56DC7B" : "New%20Convergence\/",
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++7F0C284" : "Convergence%202\/",
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E2476B3" : "Convergence\/",
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++2167E47" : "Convergence2%E7%9A%84%E5%89%AF%E6%9C%AC\/",
     "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++D1DCF2D" : "Convergence2%E7%9A%84%E5%89%AF%E6%9C%AC\/",
-    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++2167E47" : "Convergence2%E7%9A%84%E5%89%AF%E6%9C%AC\/"
+    "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E56DC7B" : "New%20Convergence\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Converge",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -26,7 +30,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zengqunlian\/LCConvergence.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++7F0C284"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zengqunlian\/LCConvergence.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++D1DCF2D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zengqunlian\/LCConvergence.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA6EFAE0B55E51B9B8B732164D8A50F555CB078B+++E2476B3"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zengqunlian\/LCConvergence.git",

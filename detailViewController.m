@@ -3,12 +3,14 @@
 //  Converge
 //
 //  Created by admin on 2017/9/7.
+//  Created by admin on 2017/9/8.
 //  Copyright © 2017年 Yixin studio. All rights reserved.
 //
 
 #import "detailViewController.h"
 #import "detailModel.h"
 @interface detailViewController ()
+<<<<<<< HEAD
 @property (weak, nonatomic) IBOutlet UIImageView *experienceImageView;
 @property (weak, nonatomic) IBOutlet UILabel *experienceTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *integrationLabel;//综合卷
@@ -24,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *clubIntroduce;//会所介绍
 @property (strong,nonatomic)NSMutableArray *clubArr;
 
+=======
+>>>>>>> 622a97b3e6b8c7bb869042815b84ab070e126927
 
 @end
 
@@ -31,9 +35,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
     [self naviConfig];
     [self request];
     [self set];
+=======
+>>>>>>> 622a97b3e6b8c7bb869042815b84ab070e126927
     // Do any additional setup after loading the view.
 }
 
@@ -41,6 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+<<<<<<< HEAD
 #pragma mark - nav
 - (void)naviConfig {
     //设置导航条标题文字
@@ -71,6 +79,16 @@
         NSLog(@"%ld",(long)statusCode);
     }];
     
+=======
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+>>>>>>> 622a97b3e6b8c7bb869042815b84ab070e126927
 }
 
 @end
