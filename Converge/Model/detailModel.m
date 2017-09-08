@@ -9,23 +9,33 @@
 #import "detailModel.h"
 
 @implementation detailModel
-- (instancetype)initWithDetailDictionary:(NSDictionary *)dict{
+- (instancetype)initWithDetailclub:(NSDictionary *)dict{
     self = [super init];
     if(self){
-        self.advImage = [Utilities nullAndNilCheck:dict[@"image"] replaceBy:@""];
-        self.adress = [Utilities nullAndNilCheck:dict[@"address"] replaceBy:@"未知"];
-        self.distance = [Utilities nullAndNilCheck:dict[@"distance"] replaceBy:@"未知"];
-        self.experienceName = [Utilities nullAndNilCheck:dict[@"name"] replaceBy:@"未知"];
-        self.experienceImage = [Utilities nullAndNilCheck:dict[@"logo"] replaceBy:@""];
-        if([dict[@"experience"]isKindOfClass:[NSNull class]]){
-            _experArr = @[];
+        self.clubname = [Utilities nullAndNilCheck:dict[@"clubName"] replaceBy:@"未知"];
+        self.elogo = [Utilities nullAndNilCheck:dict[@"eLogo"] replaceBy:@""];
+        self.eName = [Utilities nullAndNilCheck:dict[@"eName"] replaceBy:@"未知"];
+        self.price = [Utilities nullAndNilCheck:dict[@"price"] replaceBy:@"0"];
+        self.sell = [Utilities nullAndNilCheck:dict[@"saleCount"] replaceBy:@"1"];
+        if([dict[@"experienceInfos"]isKindOfClass:[NSNull class]]){
+            _clubArr = @[];
         }
-        else
-        {
-            self.experArr = dict[@"experience"];
+        else{
+            _clubArr = dict[@"experienceInfos"];
         }
     }
     return self;
 }
-
+- (instancetype)initWithclub:(NSDictionary *)dict{
+    self = [super init];
+    if(self){
+        self.clubLogo = [Utilities nullAndNilCheck:dict[@"clubLogo"] replaceBy:@""];
+        self.clubMember = [Utilities nullAndNilCheck:dict[@"clubMember"]replaceBy:@"暂无"];
+        self.clubPerson = [Utilities nullAndNilCheck:dict[@"clubPerson"] replaceBy:@"未知"];
+        self.clubAdress = [Utilities nullAndNilCheck:dict[@"clubAddressB"] replaceBy:@"未知"];
+        self.clubSite = [Utilities nullAndNilCheck:dict[@"clubSite"] replaceBy:@"0"];
+ 
+    }
+    return self;
+}
 @end

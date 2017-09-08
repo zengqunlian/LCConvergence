@@ -126,7 +126,7 @@
                                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSj-aH-vtU">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="60元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSj-aH-vtU">
                                                             <rect key="frame" x="199.5" y="79" width="38.5" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.60288347630000005" blue="0.2303789627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -373,17 +373,17 @@
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-q8-t24">
-                                        <rect key="frame" x="0.0" y="366" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="366" width="374" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="0n2-pG-xLH"/>
+                                            <constraint firstAttribute="height" constant="100" id="0n2-pG-xLH"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuz-Kh-cXT">
-                                        <rect key="frame" x="0.0" y="416" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="466" width="374" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体验劵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99v-Tl-CRk">
                                                 <rect key="frame" x="20" y="7" width="40" height="16"/>
@@ -400,7 +400,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhA-zM-Mjn">
-                                        <rect key="frame" x="0.0" y="446" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="496" width="374" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l1z-9f-ZQ8">
                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="100"/>
@@ -478,6 +478,9 @@
                                     <constraint firstAttribute="trailing" secondItem="Dmq-q8-t24" secondAttribute="trailing" id="yy1-3v-7L4"/>
                                     <constraint firstItem="iuz-Kh-cXT" firstAttribute="leading" secondItem="ejY-m4-mk2" secondAttribute="leading" id="z6u-gi-8ag"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="rwQ-A6-1mZ" id="QLA-GD-UaQ"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -497,10 +500,10 @@
                         <outlet property="experienceImageView" destination="l1z-9f-ZQ8" id="3vr-WU-cW1"/>
                         <outlet property="experienceTitleLabel" destination="DM3-Xp-37L" id="SQg-eM-Lo1"/>
                         <outlet property="integrationLabel" destination="pbs-Rq-jD9" id="Kjy-rc-f7T"/>
+                        <outlet property="memberNum" destination="3Vl-oz-tfI" id="W97-ow-5ae"/>
                         <outlet property="moneyLabel" destination="WDw-F2-krk" id="qp7-Lz-8vd"/>
                         <outlet property="num1" destination="od0-AK-cBB" id="cFM-UI-0aR"/>
-                        <outlet property="num2" destination="3Vl-oz-tfI" id="VGM-wp-NB3"/>
-                        <outlet property="num3" destination="WDc-MS-sJ6" id="wox-Na-6XQ"/>
+                        <outlet property="personNum" destination="WDc-MS-sJ6" id="kkH-hG-9VO"/>
                         <outlet property="sellLabel" destination="vGn-i7-bzl" id="xpc-LR-yQ4"/>
                         <outlet property="timeLabel" destination="9gc-Ec-bRT" id="zgj-Zr-JCW"/>
                     </connections>

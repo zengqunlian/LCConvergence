@@ -9,11 +9,21 @@
 #import <Foundation/Foundation.h>
 
 @interface detailModel : NSObject
-@property (strong,nonatomic)NSString *experienceName;
-@property (strong,nonatomic)NSString *experienceImage;
-@property (strong,nonatomic)NSString *advImage;
-@property (strong,nonatomic)NSString *adress;
-@property (strong,nonatomic)NSString *distance;
-@property (strong,nonatomic)NSArray *experArr;
-- (instancetype)initWithDetailDictionary:(NSDictionary *)dict;
+@property (strong,nonatomic)NSString *clubjing;
+@property (strong,nonatomic)NSString *clubLogo;
+@property (strong,nonatomic)NSString *clubMember;//会员数量
+@property (strong,nonatomic)NSString *clubname;
+@property (strong,nonatomic)NSString *clubPerson;//教练数量
+@property (strong,nonatomic)NSString *clubIntroduce;
+@property (strong,nonatomic)NSString *clubAdress;
+@property (strong,nonatomic)NSString *clubSite;
+@property (strong,nonatomic)NSArray *clubArr;
+@property (strong,nonatomic)NSString *elogo;
+@property (strong,nonatomic)NSString *eName;
+@property (strong,nonatomic)NSString *price;
+@property (strong,nonatomic)NSString *sell;
+
+//- (instancetype)initWithDetailexperience:(NSDictionary *)dict;
+- (instancetype)initWithDetailclub:(NSDictionary *)dict;
+- (instancetype)initWithclub:(NSDictionary *)dict;
 @end

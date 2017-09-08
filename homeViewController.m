@@ -74,7 +74,7 @@
         return 200.f;
     }
     else{
-        return 150.f;
+        return 200.f;
     }
 }
 //细胞长什么样
@@ -100,22 +100,32 @@
         homeModel *experience = _clubArr[indexPath.section];
         NSURL *url1 = [NSURL URLWithString:experience.experArr[indexPath.row-1][@"logo"]];
         // NSLog(@"456%@",_clubArr);
+        //NSLog(@"liubin = %@",experience.experArr[indexPath.row - 1]);
         [cell.experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@"莫梵"]];
         cell.experienceTitleLabel.text = experience.experArr[indexPath.row-1][@"name"];
-        cell.moneyLabel.text = experience.experArr[indexPath.row-1][@"originPrice"];
-        // cell.sellLabel.text = experience.experArr[indexPath.row-1][@"sellNumber"];
+        
+        //NSLog(@"niubi = %@,%@,%@",experience.experArr[indexPath.row -1][@"orginPrice"],experience.experArr[indexPath.row -1][@"sellNumber"],experience.experArr[indexPath.row -1][@"name"]);
+        cell.moneyLabel.text =[NSString stringWithFormat:@"¥：%@",experience.experArr[indexPath.row -1][@"orginPrice"]];
+        cell.sellLabel.text = [NSString stringWithFormat:@"已售：%@",experience.experArr[indexPath.row -1][@"sellNumber"]];
+        //NSLog(@"text = %@,%@",cell.moneyLabel.text,cell.sellLabel.text);
         //[cell.experienceImageView sd_setImageWithURL:url1]
         //cell.experienceTitleLabel.text = experience.experArr
         
         return cell;
     }
     
+   // [[StorageMgr singletonStorageMgr] addKey:@"" andValue:<#(id)#>];
+    //[[StorageMgr singletonStorageMgr] removeObjectForKey:<#(NSString *)#>];
+    //[[StorageMgr singletonStorageMgr] objectForKey:<#(NSString *)#>];
+    
+    
+    
 }
 #pragma mark - request
 -(void)request{
     NSDictionary *para = @{@"city":_city,@"jing":@"31.568",@"wei":@"120.299",@"page":@1,@"perPage":@10};
     [RequestAPI requestURL:@"/homepage/choice" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-       // NSLog(@"responseObject: %@",responseObject);
+        //NSLog(@"responseObject: %@",responseObject);
         if([responseObject[@"resultFlag"]integerValue] == 8001){
             NSArray *model =responseObject[@"advertisement"];
             for(NSDictionary *dict in model){
@@ -133,7 +143,7 @@
             for(NSDictionary *dict in club){
                 homeModel *clubImage = [[homeModel alloc]initWithDictForexperienceCell:dict];
                 [_clubArr addObject:clubImage];
-                //NSLog(@"clubarr = %lu",(unsigned long)_clubArr.count);
+                //NSLog(@"%@",_clubArr);
             }
             [_homeTableView reloadData];
         }
