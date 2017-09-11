@@ -39,6 +39,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="Kb1-ZB-08C"/>
                                                         <constraint firstAttribute="width" secondItem="JaQ-Il-7Bq" secondAttribute="height" multiplier="3:2" id="h53-C4-n8j"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="sAu-na-XzU"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-Mh-PwL">
@@ -82,6 +83,9 @@
                                                             <integer key="value" value="30"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="favoAction:forEvent:" destination="Wt1-pd-lrM" eventType="touchUpInside" id="oZt-dW-4Y8"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -103,15 +107,21 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="activityLikeLable1" destination="08R-Xv-NHd" id="V3d-Le-WBH"/>
-                                            <outlet property="activityLikeLable2" destination="9YQ-uM-WFg" id="QAI-ba-4Lm"/>
-                                            <outlet property="activityName" destination="gaT-Mh-PwL" id="pM8-uM-9ao"/>
-                                            <outlet property="favoBtn" destination="76h-AA-6LS" id="XtZ-eb-3rd"/>
+                                            <outlet property="activityImageView" destination="JaQ-Il-7Bq" id="5HN-gy-gSe"/>
+                                            <outlet property="activityInfoLabel" destination="kKR-ze-DjJ" id="Lrk-ar-XiO"/>
+                                            <outlet property="activityLikeLabel" destination="08R-Xv-NHd" id="ePI-5h-lBH"/>
+                                            <outlet property="activityNameLabel" destination="gaT-Mh-PwL" id="9Mh-Qi-Ywl"/>
+                                            <outlet property="activityUnlikeLabel" destination="9YQ-uM-WFg" id="EwT-Kg-uxS"/>
+                                            <outlet property="favoBtn" destination="76h-AA-6LS" id="gV1-C6-XIb"/>
                                             <segue destination="A6k-gC-U0C" kind="show" id="jkp-iK-K5g"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wt1-pd-lrM" id="PTq-CG-RD5"/>
+                                    <outlet property="delegate" destination="Wt1-pd-lrM" id="pYO-5W-ymf"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,17 +134,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="zHl-Rk-mLT">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="z4h-a3-HTn"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zSf-q0-Oga">
-                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                            <state key="normal" title="苏州">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="HZX-lt-o3w"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityTableView" destination="Q3I-ra-uSy" id="8ei-HH-qDm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSx-dD-JNX" sceneMemberID="firstResponder"/>
             </objects>
