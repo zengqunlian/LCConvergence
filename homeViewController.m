@@ -10,6 +10,7 @@
 #import "homeTableViewCell.h"
 #import "experienceTableViewCell.h"
 #import "homeModel.h"
+#import "StorageMgr.h"
 @interface homeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *homeTableView;
 //@property (weak, nonatomic) IBOutlet UIImageView *image1;
@@ -103,7 +104,9 @@
         //NSLog(@"liubin = %@",experience.experArr[indexPath.row - 1]);
         [cell.experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@"莫梵"]];
         cell.experienceTitleLabel.text = experience.experArr[indexPath.row-1][@"name"];
-        
+        //NSLog(@"23423456347%@",(experience.hotelid));
+        [[StorageMgr singletonStorageMgr] addKey:@"ID" andValue:experience.hotelid];
+
         //NSLog(@"niubi = %@,%@,%@",experience.experArr[indexPath.row -1][@"orginPrice"],experience.experArr[indexPath.row -1][@"sellNumber"],experience.experArr[indexPath.row -1][@"name"]);
         cell.moneyLabel.text =[NSString stringWithFormat:@"¥：%@",experience.experArr[indexPath.row -1][@"orginPrice"]];
         cell.sellLabel.text = [NSString stringWithFormat:@"已售：%@",experience.experArr[indexPath.row -1][@"sellNumber"]];
@@ -114,7 +117,7 @@
         return cell;
     }
     
-   // [[StorageMgr singletonStorageMgr] addKey:@"" andValue:<#(id)#>];
+    //[[StorageMgr singletonStorageMgr] addKey:@"" andValue:<#(id)#>];
     //[[StorageMgr singletonStorageMgr] removeObjectForKey:<#(NSString *)#>];
     //[[StorageMgr singletonStorageMgr] objectForKey:<#(NSString *)#>];
     
@@ -125,7 +128,7 @@
 -(void)request{
     NSDictionary *para = @{@"city":_city,@"jing":@"31.568",@"wei":@"120.299",@"page":@1,@"perPage":@10};
     [RequestAPI requestURL:@"/homepage/choice" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-        //NSLog(@"responseObject: %@",responseObject);
+       // NSLog(@"responseObject: %@",responseObject);
         if([responseObject[@"resultFlag"]integerValue] == 8001){
             NSArray *model =responseObject[@"advertisement"];
             for(NSDictionary *dict in model){

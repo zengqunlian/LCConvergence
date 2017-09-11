@@ -17,6 +17,7 @@
 @property (strong,nonatomic)NSString *adress;
 @property (strong,nonatomic)NSString *distance;
 @property (strong,nonatomic)NSArray *experArr;
+@property (strong,nonatomic)NSString *hotelid;
 - (instancetype)initWithDictForadvertise:(NSDictionary *)dict;
 - (instancetype)initWithDictForexperienceCell:(NSDictionary *)dict;
 

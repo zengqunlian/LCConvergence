@@ -9,6 +9,7 @@
 
 #import "detailViewController.h"
 #import "detailModel.h"
+#import "StorageMgr.h"
 @interface detailViewController ()
 
 
@@ -71,7 +72,8 @@
 }
 #pragma mark - request
 -(void)request{
-    NSDictionary *para = @{@"clubKeyId":@6};
+    //[[StorageMgr singletonStorageMgr] objectForKey:@"ID"];
+        NSDictionary *para = @{@"clubKeyId":[[StorageMgr singletonStorageMgr] objectForKey:@"ID"]};
     [RequestAPI requestURL:@"/clubController/getClubDetails" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
         NSLog(@"responseObject: %@",responseObject);
         if([responseObject[@"resultFlag"]integerValue] == 8001){

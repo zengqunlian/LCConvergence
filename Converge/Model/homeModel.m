@@ -26,6 +26,7 @@
         self.distance = [Utilities nullAndNilCheck:dict[@"distance"] replaceBy:@"未知"];
         self.experienceName = [Utilities nullAndNilCheck:dict[@"name"] replaceBy:@"未知"];
         self.experienceImage = [Utilities nullAndNilCheck:dict[@"logo"] replaceBy:@""];
+        self.hotelid = [Utilities nullAndNilCheck:dict[@"id"] replaceBy:@"6"];
         if([dict[@"experience"]isKindOfClass:[NSNull class]]){
             _experArr = @[];
         }
