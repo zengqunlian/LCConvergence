@@ -10,7 +10,7 @@
 #import "UserModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MyInfoViewController ()
+@interface MyInfoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLbl;
@@ -29,23 +29,23 @@
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    if ([Utilities loginCheck]) {
-        //已登录
-        _loginBtn.hidden = YES;
-        _userNameLbl.hidden = NO;
-        UserModel *user = [[StorageMgr singletonStorageMgr]objectForKey:@"MemberInfo"];
-        [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"Avatar"]];
-        _userNameLbl.text = user.nickname;
-    }else{
-        //未登录
-        _loginBtn.hidden = NO;
-        _userNameLbl.hidden = YES;
-        _avatarImageView.image= [UIImage imageNamed:@"Avatar"];
-        _userNameLbl.text = @"客户";
-    }
-}
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    if ([Utilities loginCheck]) {
+//        //已登录
+//        _loginBtn.hidden = YES;
+//        _userNameLbl.hidden = NO;
+//        UserModel *user = [[StorageMgr singletonStorageMgr]objectForKey:@"MemberInfo"];
+//        [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"Avatar"]];
+//        _userNameLbl.text = user.nickname;
+//    }else{
+//        //未登录
+//        _loginBtn.hidden = NO;
+//        _userNameLbl.hidden = YES;
+//        _avatarImageView.image= [UIImage imageNamed:@"Avatar"];
+//        _userNameLbl.text = @"客户";
+//    }
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -57,37 +57,29 @@
     _avatarImageView.layer.borderColor = [[UIColor lightGrayColor]CGColor];
 }
 - (void)dataInitialize{
-    _arr = @[@"我的订单",@"我的推广",@"积分中心",@"意见反馈",@"关于我们"];
+_arr =@[@{@"title":@"我的订单"},@{@"title":@"我的推广"},@{@"title":@"积分中心"},@{@"title":@"我的设置"},@{@"title":@"意见反馈"},@{@"title":@"关于我们"}];
 }
 //有多少组
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return _arr.count;
 }
 //每组多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 1;
 }
-
+//细胞长什么样
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if(indexPath.section == 0){
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MemberCell" forIndexPath:indexPath];
-        cell.textLabel.text = _arr[indexPath.row];
-        return cell;
-    }else{
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EmptyCell" forIndexPath:indexPath];
-        return cell;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MemberCell" forIndexPath:indexPath];
+    NSDictionary *dict = _arr[indexPath.section];
+    cell.textLabel.text = dict[@"title"];
+    return cell;
     }
-}
+
 //设置cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.section == 0){
-        return 50.f;
-    }else{
-        return UI_SCREEN_H - 500;
+    return 40.f;
     }
-    
-}
 //按住细胞以后（取消选择）
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -115,9 +107,9 @@
                     break;
             }
         }else{
-            //UINavigationController *signNavi = [Utilities getStoryboardInstance:@"Member" byIdentity:@"SignNavi"];
+            UINavigationController *signNavi = [Utilities getStoryboardInstance:@"Login" byIdentity:@"SignNavi"];
 
-            //[self presentViewController:signNavi animated:YES completion:nil];
+            [self presentViewController:signNavi animated:YES completion:nil];
         }
     }
 }
@@ -134,8 +126,10 @@
 */
 
 - (IBAction)loginAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    //获取要跳转过去的那个页面
+    UINavigationController *signNavi = [Utilities getStoryboardInstance:@"Login" byIdentity:@"LoginNavi"];
+    //执行跳转
+    [self presentViewController:signNavi animated:YES completion:nil];
 }
 
-- (IBAction)settingAction:(UIButton *)sender forEvent:(UIEvent *)event {
-}
 @end

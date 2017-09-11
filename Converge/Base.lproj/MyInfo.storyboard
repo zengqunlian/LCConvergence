@@ -182,7 +182,7 @@
                                                 <constraint firstAttribute="height" constant="30" id="U9Y-aN-Ws0"/>
                                                 <constraint firstAttribute="width" constant="50" id="wyD-IA-fMP"/>
                                             </constraints>
-                                            <state key="normal" title="登陆">
+                                            <state key="normal" title="登录">
                                                 <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -222,7 +222,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MemberCell" textLabel="t1G-Vi-Tgs" style="IBUITableViewCellStyleDefault" id="oIL-Uh-hSK">
-                                        <rect key="frame" x="0.0" y="198" width="313" height="44"/>
+                                        <rect key="frame" x="0.0" y="198" width="312" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oIL-Uh-hSK" id="0Tx-eb-DVn">
                                             <rect key="frame" x="0.0" y="0.0" width="279.5" height="43.5"/>
@@ -238,16 +238,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmptyCell" id="Cv4-4A-9sq">
-                                        <rect key="frame" x="0.0" y="242" width="313" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cv4-4A-9sq" id="myZ-QS-xOo">
-                                            <rect key="frame" x="0.0" y="0.0" width="313" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <inset key="separatorInset" minX="500" minY="0.0" maxX="500" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

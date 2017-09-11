@@ -7,19 +7,52 @@
 //
 
 #import "AppDelegate.h"
+#import <ECSlidingViewController/ECSlidingViewController.h>//门框结构
 
-@interface AppDelegate ()
+@interface AppDelegate ()<ECSlidingViewControllerDelegate>
+//初始化一个实例，获得门框
+@property (strong, nonatomic)ECSlidingViewController *slidingVC;
 
 @end
 
 @implementation AppDelegate
 
-
+//初始化一个实例，获得门框
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //初始化窗口
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    //将窗口可视化
+    [_window makeKeyAndVisible];
+    UINavigationController *navi = [Utilities getStoryboardInstance:@"Main" byIdentity:@"HomeNavi"];
+    //创建门框
+    _slidingVC = [[ECSlidingViewController alloc]initWithTopViewController:navi];
+    //放好左边那扇门
+    _slidingVC.underLeftViewController = [Utilities getStoryboardInstance:@"MyInfo" byIdentity:@"Left"];
+    //设置手势
+    _slidingVC.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGestureTapping | ECSlidingViewControllerAnchoredGesturePanning;
+    //把上述手势添加到中间那扇门
+    [navi.view addGestureRecognizer:_slidingVC.panGesture];
+    //设置侧滑动画执行时间
+    _slidingVC.anchorRightPeekAmount = UI_SCREEN_W / 6;
+    //窗口app入口
+    _window.rootViewController = _slidingVC;
+    //注册侧滑按钮被按的监听
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(leftSwitchAction:) name:@"LeftSwitch" object:nil];
     return YES;
 }
 
+//当收到通知后要执行的方法
+- (void)leftSwitchAction:(NSNotification *)note{
+    NSLog(@"侧滑");
+    //当合上的状态下打开，当打开的状态下合上
+    if (_slidingVC.currentTopViewPosition == ECSlidingViewControllerTopViewPositionCentered) {
+        [_slidingVC anchorTopViewToRightAnimated:YES];
+    }else{
+        //打开的状态下合上
+        [_slidingVC resetTopViewAnimated:YES];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -28,6 +28,7 @@
     [self set];
     [self naviConfig];
     [self request];
+    [self switchAction];
     //    _homeArr = @[@{@"homeImageView":@"莫梵",@"titleLabel":@"莫梵瑜伽（阳光店）",@"adressLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"experiencrImageView":@"莫梵",@"experienceTitleLabel":@"莫梵瑜伽-体验卡",@"integrationLabel":@"综合卷",@"moneyLabel":@"70yuan",@"sellLabel":@"已售1"},@{@"homeImageView":@"莫梵",@"titleLabel":@"莫梵瑜伽（阳光店）",@"adressLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"experiencrImageView":@"莫梵",@"experienceTitleLabel":@"莫梵瑜伽-体验卡",@"integrationLabel":@"综合卷",@"moneyLabel":@"70yuan",@"sellLabel":@"已售1"},@{@"homeImageView":@"莫梵",@"titleLabel":@"莫梵瑜伽（阳光店）",@"adressLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"experiencrImageView":@"莫梵",@"experienceTitleLabel":@"莫梵瑜伽-体验卡",@"integrationLabel":@"综合卷",@"moneyLabel":@"70yuan",@"sellLabel":@"已售1"}];
     //    // Do any additional setup after loading the view.
     
@@ -155,4 +156,11 @@
     }];
     
 }
+
+- (void)switchAction{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LeftSwitch" object:nil];
+}
+
+
+
 @end
