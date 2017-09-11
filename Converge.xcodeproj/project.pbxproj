@@ -27,6 +27,7 @@
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
 		84B906AA1F666F2400C9DDA5 /* foundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B906A91F666F2400C9DDA5 /* foundModel.m */; };
+		84B906AD1F667BAA00C9DDA5 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B906AC1F667BAA00C9DDA5 /* ActivityTableViewCell.m */; };
 		84E910F31F60DBC000281B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E910F21F60DBC000281B0B /* Assets.xcassets */; };
 		84E910F61F60DDB100281B0B /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E910F41F60DDB100281B0B /* MyInfo.storyboard */; };
 		84E9112A1F616A7200281B0B /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E911281F616A7200281B0B /* Activity.storyboard */; };
@@ -138,6 +139,8 @@
 		84B86A7D1F5A571F00CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Found.storyboard; sourceTree = SOURCE_ROOT; };
 		84B906A81F666F2400C9DDA5 /* foundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foundModel.h; sourceTree = "<group>"; };
 		84B906A91F666F2400C9DDA5 /* foundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foundModel.m; sourceTree = "<group>"; };
+		84B906AB1F667BAA00C9DDA5 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
+		84B906AC1F667BAA00C9DDA5 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
 		84E910F21F60DBC000281B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E910F51F60DDB100281B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/MyInfo.storyboard; sourceTree = SOURCE_ROOT; };
 		84E911291F616A7200281B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Activity.storyboard; sourceTree = SOURCE_ROOT; };
@@ -393,6 +396,8 @@
 		84E9112E1F616ADA00281B0B /* ActivityViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84B906AB1F667BAA00C9DDA5 /* ActivityTableViewCell.h */,
+				84B906AC1F667BAA00C9DDA5 /* ActivityTableViewCell.m */,
 				84E911281F616A7200281B0B /* Activity.storyboard */,
 				845808301F66784100E8BD0B /* ActivityTableViewCell.h */,
 				845808311F66784100E8BD0B /* ActivityTableViewCell.m */,
@@ -884,6 +889,7 @@
 				B20CE0941F51482900071361 /* NSData+Base64.m in Sources */,
 				B20CE0901F51482900071361 /* RSADataVerifier.m in Sources */,
 				843311B61F628E310079E506 /* FoundViewController.m in Sources */,
+				84B906AD1F667BAA00C9DDA5 /* ActivityTableViewCell.m in Sources */,
 				B20CE07F1F51482900071361 /* qrspec.m in Sources */,
 				B20CE07C1F51482900071361 /* mask.m in Sources */,
 				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,
