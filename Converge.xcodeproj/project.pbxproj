@@ -17,6 +17,8 @@
 		841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38861F611B2800A6CB28 /* experienceViewController.m */; };
 		841E388D1F61314A00A6CB28 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E388C1F61314A00A6CB28 /* UserModel.m */; };
 		841E38911F61365500A6CB28 /* detailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38901F61365500A6CB28 /* detailModel.m */; };
+		843311B61F628E310079E506 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843311B51F628E310079E506 /* FoundViewController.m */; };
+		843311BA1F628E740079E506 /* FoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843311B91F628E740079E506 /* FoundTableViewCell.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
 		847ACF881F622752000ED30D /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF871F622752000ED30D /* ActivityDetailViewController.m */; };
 		847ACF8B1F6227A2000ED30D /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF8A1F6227A2000ED30D /* detailViewController.m */; };
@@ -115,6 +117,10 @@
 		841E388C1F61314A00A6CB28 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		841E388F1F61365500A6CB28 /* detailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailModel.h; sourceTree = "<group>"; };
 		841E38901F61365500A6CB28 /* detailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailModel.m; sourceTree = "<group>"; };
+		843311B41F628E310079E506 /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
+		843311B51F628E310079E506 /* FoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundViewController.m; sourceTree = "<group>"; };
+		843311B81F628E740079E506 /* FoundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundTableViewCell.h; sourceTree = "<group>"; };
+		843311B91F628E740079E506 /* FoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundTableViewCell.m; sourceTree = "<group>"; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
 		847ACF861F622752000ED30D /* ActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailViewController.h; sourceTree = SOURCE_ROOT; };
@@ -333,6 +339,15 @@
 			name = DetailModel;
 			sourceTree = "<group>";
 		};
+		843311B71F628E580079E506 /* FoundView */ = {
+			isa = PBXGroup;
+			children = (
+				843311B81F628E740079E506 /* FoundTableViewCell.h */,
+				843311B91F628E740079E506 /* FoundTableViewCell.m */,
+			);
+			name = FoundView;
+			sourceTree = "<group>";
+		};
 		844309EF1F5D2E67000DED39 /* homeViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +388,8 @@
 			isa = PBXGroup;
 			children = (
 				84B86A7C1F5A571F00CC4782 /* Found.storyboard */,
+				843311B41F628E310079E506 /* FoundViewController.h */,
+				843311B51F628E310079E506 /* FoundViewController.m */,
 			);
 			name = FoundViewController;
 			sourceTree = "<group>";
@@ -618,6 +635,7 @@
 		B20CE0771F51482900071361 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				843311B71F628E580079E506 /* FoundView */,
 				841E387A1F61194900A6CB28 /* HomeView */,
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
@@ -819,6 +837,7 @@
 			files = (
 				841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */,
 				B20CE08F1F51482900071361 /* RSADataSigner.m in Sources */,
+				843311BA1F628E740079E506 /* FoundTableViewCell.m in Sources */,
 				B20CE0891F51482900071361 /* base64.m in Sources */,
 				B20CE0871F51482900071361 /* Order.m in Sources */,
 				B20CE08C1F51482900071361 /* MD5DataSigner.m in Sources */,
@@ -840,6 +859,7 @@
 				B20CE0821F51482900071361 /* BasicEncodingRules.m in Sources */,
 				B20CE0941F51482900071361 /* NSData+Base64.m in Sources */,
 				B20CE0901F51482900071361 /* RSADataVerifier.m in Sources */,
+				843311B61F628E310079E506 /* FoundViewController.m in Sources */,
 				B20CE07F1F51482900071361 /* qrspec.m in Sources */,
 				B20CE07C1F51482900071361 /* mask.m in Sources */,
 				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,

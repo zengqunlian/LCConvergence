@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rMg-Yl-xhM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rMg-Yl-xhM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--发现-->
         <scene sceneID="hnV-hC-mUK">
             <objects>
-                <viewController title="发现" id="oxs-6M-HLP" sceneMemberID="viewController">
+                <viewController title="发现" id="oxs-6M-HLP" customClass="FoundViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ENR-1a-rWm"/>
                         <viewControllerLayoutGuide type="bottom" id="5hB-Yt-ad2"/>
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="104" width="375" height="372"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="224" id="O9x-Sd-zl3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foundCell" rowHeight="224" id="O9x-Sd-zl3" customClass="FoundTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O9x-Sd-zl3" id="DEd-F5-ZEQ">
@@ -161,6 +161,16 @@
                                                 <constraint firstItem="55u-pc-oKp" firstAttribute="top" secondItem="DEd-F5-ZEQ" secondAttribute="top" id="rNo-AS-Qih"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foundAdress1" destination="Kzc-8W-G4r" id="Dpm-5p-ijF"/>
+                                            <outlet property="foundAdress2" destination="Fmv-jZ-3wI" id="QgO-Cv-8N2"/>
+                                            <outlet property="foundDistance1" destination="Iko-8B-BEI" id="JXO-yA-3NG"/>
+                                            <outlet property="foundDistance2" destination="esg-O1-a20" id="DLQ-DK-Lb1"/>
+                                            <outlet property="foundTitle1" destination="2v5-RR-rkY" id="6mt-c1-pne"/>
+                                            <outlet property="foundTitle2" destination="0Qb-CQ-iY2" id="LO2-aR-F73"/>
+                                            <outlet property="image1" destination="h2Y-Fu-tYH" id="OSG-y6-YQ0"/>
+                                            <outlet property="image2" destination="hCa-k8-XtW" id="Y2e-K3-J51"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -183,6 +193,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="发现" id="hGp-FJ-XOk"/>
+                    <connections>
+                        <outlet property="foundTableView" destination="lrb-dN-EGp" id="h95-8A-cSR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qF-Mz-HiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

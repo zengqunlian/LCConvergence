@@ -84,25 +84,18 @@
                 _experienceTitleLabel.text = model.eName;
                 _moneyLabel.text = [NSString stringWithFormat:@"¥:%@", model.price];
                 _sellLabel.text = [NSString stringWithFormat:@"已售:%@", model.sell];
-//                cell.sellLabel.text = [NSString stringWithFormat:@"已售：%@",experience.experArr[indexPath.row -1][@"sellNumber"]];
-//                _clubIntroduce.text = model.clubIntroduce;
-//                _clubAdress.text = model.clubAdress;
-//                _memberNum.text = [NSString stringWithFormat:@"%@", model.clubMember];
-//                _personNum.text = [NSString stringWithFormat:@"%@", model.clubPerson];
-//                 _num1.text = [NSString stringWithFormat:@"%@", model.clubSite];
-//
-                [_experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@""]];
-                NSArray *arr = responseObject;
-                for (NSDictionary *dict in arr){
-                    detailModel *model1 = [[detailModel alloc]initWithclub:dict];
-                    NSURL *url = [NSURL URLWithString:model1.clubLogo];
-                    _clubIntroduce.text = model1.clubIntroduce;
-                    _clubAdress.text = model1.clubAdress;
-                    _memberNum.text = [NSString stringWithFormat:@"%@", model1.clubMember];
-                    _personNum.text = [NSString stringWithFormat:@"%@", model1.clubPerson];
-                    _num1.text = [NSString stringWithFormat:@"%@", model1.clubSite];
-                    [_clubImage sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@""]];
-                }
+               [_experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@""]];
+//                NSArray *arr = responseObject;
+//                for (NSDictionary *dict in arr){
+//                    detailModel *model1 = [[detailModel alloc]initWithclub:dict];
+//                    NSURL *url = [NSURL URLWithString:model1.clubLogo];
+//                    _clubIntroduce.text = model1.clubIntroduce;
+//                    _clubAdress.text = model1.clubAdress;
+//                    _memberNum.text = [NSString stringWithFormat:@"%@", model1.clubMember];
+//                    _personNum.text = [NSString stringWithFormat:@"%@", model1.clubPerson];
+//                    _num1.text = [NSString stringWithFormat:@"%@", model1.clubSite];
+//                    [_clubImage sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@""]];
+//                }
                 
             }
         
