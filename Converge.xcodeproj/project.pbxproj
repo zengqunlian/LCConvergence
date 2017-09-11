@@ -24,6 +24,7 @@
 		847ACF8B1F6227A2000ED30D /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF8A1F6227A2000ED30D /* detailViewController.m */; };
 		84B86A7B1F5A551100CC4782 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A791F5A551100CC4782 /* Home.storyboard */; };
 		84B86A7E1F5A571F00CC4782 /* Found.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B86A7C1F5A571F00CC4782 /* Found.storyboard */; };
+		84B906AA1F666F2400C9DDA5 /* foundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B906A91F666F2400C9DDA5 /* foundModel.m */; };
 		84E910F31F60DBC000281B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E910F21F60DBC000281B0B /* Assets.xcassets */; };
 		84E910F61F60DDB100281B0B /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E910F41F60DDB100281B0B /* MyInfo.storyboard */; };
 		84E9112A1F616A7200281B0B /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E911281F616A7200281B0B /* Activity.storyboard */; };
@@ -129,6 +130,8 @@
 		847ACF8A1F6227A2000ED30D /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = SOURCE_ROOT; };
 		84B86A7A1F5A551100CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		84B86A7D1F5A571F00CC4782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Found.storyboard; sourceTree = SOURCE_ROOT; };
+		84B906A81F666F2400C9DDA5 /* foundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foundModel.h; sourceTree = "<group>"; };
+		84B906A91F666F2400C9DDA5 /* foundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foundModel.m; sourceTree = "<group>"; };
 		84E910F21F60DBC000281B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E910F51F60DDB100281B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/MyInfo.storyboard; sourceTree = SOURCE_ROOT; };
 		84E911291F616A7200281B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Converge/Base.lproj/Activity.storyboard; sourceTree = SOURCE_ROOT; };
@@ -362,6 +365,15 @@
 			name = homeViewController;
 			sourceTree = "<group>";
 		};
+		84B906A71F666EF400C9DDA5 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				84B906A81F666F2400C9DDA5 /* foundModel.h */,
+				84B906A91F666F2400C9DDA5 /* foundModel.m */,
+			);
+			name = Found;
+			sourceTree = "<group>";
+		};
 		84E911091F6125F800281B0B /* MyInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +572,7 @@
 			children = (
 				841E388E1F61362700A6CB28 /* DetailModel */,
 				841E38811F611AD400A6CB28 /* Home */,
+				84B906A71F666EF400C9DDA5 /* Found */,
 				B20CE0461F51482900071361 /* Converge.xcdatamodeld */,
 				B20CE0481F51482900071361 /* Order.h */,
 				B20CE0491F51482900071361 /* Order.m */,
@@ -885,6 +898,7 @@
 				844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */,
 				841E38801F61197E00A6CB28 /* experienceTableViewCell.m in Sources */,
 				841E38911F61365500A6CB28 /* detailModel.m in Sources */,
+				84B906AA1F666F2400C9DDA5 /* foundModel.m in Sources */,
 				B20CE07A1F51482900071361 /* HMSegmentedControl.m in Sources */,
 				B20CE0801F51482900071361 /* rscode.m in Sources */,
 			);
