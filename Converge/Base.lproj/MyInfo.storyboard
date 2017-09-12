@@ -222,7 +222,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MemberCell" textLabel="t1G-Vi-Tgs" style="IBUITableViewCellStyleDefault" id="oIL-Uh-hSK">
-                                        <rect key="frame" x="0.0" y="198" width="312" height="44"/>
+                                        <rect key="frame" x="0.0" y="198" width="313" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oIL-Uh-hSK" id="0Tx-eb-DVn">
                                             <rect key="frame" x="0.0" y="0.0" width="279.5" height="43.5"/>

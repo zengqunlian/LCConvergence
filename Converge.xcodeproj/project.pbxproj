@@ -309,10 +309,10 @@
 			isa = PBXGroup;
 			children = (
 				7CD059611F5D3B3100006ADF /* Login.storyboard */,
-				840BB90F1F5E6D84001EFD2A /* SiginViewController.h */,
-				840BB9101F5E6D84001EFD2A /* SiginViewController.m */,
 				840BB9121F5E6D95001EFD2A /* LoginViewController.h */,
 				840BB9131F5E6D95001EFD2A /* LoginViewController.m */,
+				840BB90F1F5E6D84001EFD2A /* SiginViewController.h */,
+				840BB9101F5E6D84001EFD2A /* SiginViewController.m */,
 			);
 			name = SiginViewController;
 			sourceTree = "<group>";

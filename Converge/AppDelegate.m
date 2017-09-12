@@ -38,7 +38,7 @@
     //窗口app入口
     _window.rootViewController = _slidingVC;
     //注册侧滑按钮被按的监听
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(leftSwitchAction:) name:@"LeftSwitch" object:nil];
+    //[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(leftSwitchAction:) name:@"LeftSwitch" object:nil];
     return YES;
 }
 

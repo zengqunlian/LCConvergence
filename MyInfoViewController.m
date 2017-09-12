@@ -107,7 +107,7 @@ _arr =@[@{@"title":@"我的订单"},@{@"title":@"我的推广"},@{@"title":@"积
                     break;
             }
         }else{
-            UINavigationController *signNavi = [Utilities getStoryboardInstance:@"Login" byIdentity:@"SignNavi"];
+            UINavigationController *signNavi = [Utilities getStoryboardInstance:@"Login" byIdentity:@"LoginNavi"];
 
             [self presentViewController:signNavi animated:YES completion:nil];
         }
