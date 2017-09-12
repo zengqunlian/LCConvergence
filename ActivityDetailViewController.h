@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ActivityModel.h"
 
 @interface ActivityDetailViewController : UIViewController
+
+//创建一个容器去接收别的页面传来的数据
+@property (strong, nonatomic)ActivityModel * activity;
 
 @end
