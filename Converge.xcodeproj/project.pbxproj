@@ -20,6 +20,7 @@
 		843311B61F628E310079E506 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843311B51F628E310079E506 /* FoundViewController.m */; };
 		843311BA1F628E740079E506 /* FoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843311B91F628E740079E506 /* FoundTableViewCell.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
+		844E82C31F6A5D8D00A5714D /* PayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E82C21F6A5D8D00A5714D /* PayTableViewController.m */; };
 		8458082F1F66781300E8BD0B /* ActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458082E1F66781300E8BD0B /* ActivityModel.m */; };
 		847ACF881F622752000ED30D /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF871F622752000ED30D /* ActivityDetailViewController.m */; };
 		847ACF8B1F6227A2000ED30D /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ACF8A1F6227A2000ED30D /* detailViewController.m */; };
@@ -126,6 +127,8 @@
 		843311B91F628E740079E506 /* FoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundTableViewCell.m; sourceTree = "<group>"; };
 		844309F01F5D2EA4000DED39 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = SOURCE_ROOT; };
 		844309F11F5D2EA4000DED39 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = SOURCE_ROOT; };
+		844E82C11F6A5D8D00A5714D /* PayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTableViewController.h; sourceTree = "<group>"; };
+		844E82C21F6A5D8D00A5714D /* PayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTableViewController.m; sourceTree = "<group>"; };
 		8458082D1F66781300E8BD0B /* ActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityModel.h; sourceTree = "<group>"; };
 		8458082E1F66781300E8BD0B /* ActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityModel.m; sourceTree = "<group>"; };
 		847ACF861F622752000ED30D /* ActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailViewController.h; sourceTree = SOURCE_ROOT; };
@@ -401,6 +404,8 @@
 				84E9112C1F616ACD00281B0B /* ActivityViewController.m */,
 				847ACF861F622752000ED30D /* ActivityDetailViewController.h */,
 				847ACF871F622752000ED30D /* ActivityDetailViewController.m */,
+				844E82C11F6A5D8D00A5714D /* PayTableViewController.h */,
+				844E82C21F6A5D8D00A5714D /* PayTableViewController.m */,
 			);
 			name = ActivityViewController;
 			sourceTree = "<group>";
@@ -886,6 +891,7 @@
 				843311B61F628E310079E506 /* FoundViewController.m in Sources */,
 				84B906AD1F667BAA00C9DDA5 /* ActivityTableViewCell.m in Sources */,
 				B20CE07F1F51482900071361 /* qrspec.m in Sources */,
+				844E82C31F6A5D8D00A5714D /* PayTableViewController.m in Sources */,
 				B20CE07C1F51482900071361 /* mask.m in Sources */,
 				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,
 				847ACF881F622752000ED30D /* ActivityDetailViewController.m in Sources */,

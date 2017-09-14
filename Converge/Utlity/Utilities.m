@@ -139,4 +139,21 @@
     return headers;
 }
 
++ (NSTimeInterval)cTimestampFromString:(NSString *)timeStr format:(NSString *)format{
+    NSDateFormatter *matter = [[NSDateFormatter alloc]init];
+    matter.dateFormat = format;
+    NSDate *date = [matter dateFromString:timeStr];
+    NSTimeInterval timeStamp = [date timeIntervalSince1970] * 1000;
+    return timeStamp;
+}
+
++ (NSString *)dateStrFromCstampTime:(NSInteger)timeStamp withDateFormat:(NSString *)format{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:(timeStamp / 1000)];
+    NSDateFormatter *matter = [[NSDateFormatter alloc]init];
+    matter.dateFormat = format;
+    NSString *timeStr = [matter stringFromDate:date];
+    return timeStr;
+}
+
+
 @end

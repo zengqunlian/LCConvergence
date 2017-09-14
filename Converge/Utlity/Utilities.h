@@ -35,5 +35,10 @@
 + (BOOL)loginCheck;
 //配置登录用户的网络请求头文件
 + (NSArray *)getHeaderOfEncodedTokenForParameters:(NSDictionary *)parameters withRequest:(NSString*)request;
+//字符串转毫秒时间戳
++ (NSTimeInterval)cTimestampFromString:(NSString *)timeStr format:(NSString *)format;
+//毫秒时间戳转字符串
++ (NSString *)dateStrFromCstampTime:(NSInteger)timeStamp withDateFormat:(NSString *)format;
+
 
 @end

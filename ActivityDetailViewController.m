@@ -8,6 +8,7 @@
 
 #import "ActivityDetailViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "PayTableViewController.h"
 
 @interface ActivityDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *activityImgView;
@@ -44,6 +45,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear: animated];
+    [self networkRequest];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -107,11 +114,12 @@
     _addressLbl.text = _activity.address;
     _contentLbl.text =_activity.content;
     [_phoneBtn setTitle:[NSString stringWithFormat:@"联系活动发布者%@",_activity.phone] forState:UIControlStateNormal];
-//    NSString *dueTimeStr = [Utilities dateStrFromCstampTime:_activity.duetime withDateFormat:@"yyyy-MM-dd HH:mm"];
-//    NSString *startTimeStr = [Utilities dateStrFromCstampTime:_activity.starttime withDateFormat:@"yyyy-MM-dd HH:mm"];
-//    NSString *endTimeStr = [Utilities dateStrFromCstampTime:_activity.endtime withDateFormat:@"yyyy-MM-dd HH:mm"];
-//    _timelbl.text =[NSString stringWithFormat:@"%@ ~ %@",startTimeStr, endTimeStr];
-//    _applyDueLbl.text = [NSString stringWithFormat:@"报名截止时间(%@)",dueTimeStr];
+    NSString *dueTimeStr = [Utilities dateStrFromCstampTime:_activity.duetime withDateFormat:@"yyyy-MM-dd HH:mm"];
+    NSString *startTimeStr = [Utilities dateStrFromCstampTime:_activity.starttime withDateFormat:@"yyyy-MM-dd HH:mm"];
+    NSString *endTimeStr = [Utilities dateStrFromCstampTime:_activity.endtime withDateFormat:@"yyyy-MM-dd HH:mm"];
+    _timelbl.text =[NSString stringWithFormat:@"%@ ~ %@",startTimeStr, endTimeStr];
+    _applyDueLbl.text = [NSString stringWithFormat:@"报名截止时间(%@)",dueTimeStr];
+    //获取什么时候调用这方法这个时间
     NSDate *now=[NSDate date];
     NSTimeInterval nowTime=[now timeIntervalSince1970InMilliSecond];
     _applyStartView.backgroundColor = [UIColor grayColor];
@@ -168,7 +176,19 @@
 
 
 - (IBAction)applyAction:(UIButton *)sender {
-   
+    if ([Utilities loginCheck]) {
+        PayTableViewController*purchaseVC = [Utilities getStoryboardInstance:@"Activity" byIdentity:@"Pay"];
+        //传数据到下一个页面
+        purchaseVC.activity = _activity;
+        //push跳转
+        [self.navigationController pushViewController:purchaseVC animated:YES];
+    }else{
+        //获取要跳转过去的那个页面
+        UINavigationController *signNavi = [Utilities getStoryboardInstance:@"Login" byIdentity:@"LoginNavi"];
+        //执行跳转
+        [self presentViewController:signNavi animated:YES completion:nil];
+    }
+
 }
 
 - (IBAction)callAction:(UIButton *)sender forEvent:(UIEvent *)event {
@@ -178,4 +198,6 @@
     //从当前APP跳转到其他指定的APP中
     [[UIApplication sharedApplication] openURL:targetAppUrl];
 }
+
 @end
+

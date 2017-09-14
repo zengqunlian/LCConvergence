@@ -18,5 +18,7 @@
 #import "ErrorHandler.h"
 #import "NSDate+Utility.h"
 #import "NSString+Crypt.h"
+#import "GBAlipayManager.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+
 #endif /* PrefixHeader_pch */
