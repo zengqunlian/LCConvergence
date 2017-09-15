@@ -9,6 +9,7 @@
 #import "ActivityViewController.h"
 #import "ActivityModel.h"
 #import "ActivityTableViewCell.h"
+#import "ActivityDetailViewController.h"
 
 @interface ActivityViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSInteger page;//页码
@@ -277,6 +278,19 @@
         }];
     }
 
+}
+//当某一个页面跳转行为将要发生的时候
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"List2ActivityDetail"]) {
+        //当列表页到详情页的这个跳转要发生的时候
+        //1.获取要传递到下一页的数据
+        NSIndexPath *indexPath = [_activityTableView indexPathForSelectedRow];
+        ActivityModel *activity = _arr[indexPath.row];
+        //2.获取下一页的实例
+        ActivityDetailViewController *detailVC = segue.destinationViewController;
+        //3.把数据给下一页预备好的接收容器
+        detailVC.activity = activity;
+    }
 }
 
 

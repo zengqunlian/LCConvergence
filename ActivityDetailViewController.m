@@ -9,6 +9,7 @@
 #import "ActivityDetailViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "PayTableViewController.h"
+#import "ActivityModel.h"
 
 @interface ActivityDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *activityImgView;
@@ -28,7 +29,9 @@
 @property (weak, nonatomic) IBOutlet UIView *applyEndView;
 @property (weak, nonatomic) IBOutlet UILabel *contentLbl;
 
-- (IBAction)applyAction:(UIButton *)sender;
+
+- (IBAction)applyAction:(UIButton *)sender forEvent:(UIEvent *)event;
+
 - (IBAction)callAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end
@@ -82,6 +85,7 @@
 -(void)networkRequest{
     UIActivityIndicatorView *aiv = [Utilities getCoverOnView:self.view];
     NSString *request =[NSString stringWithFormat:@"/event/%@",_activity.activtyId];
+    NSLog(@"111%@",_activity.activtyId);
     NSMutableDictionary *parameters = [NSMutableDictionary new];
     if ([Utilities loginCheck]) {
         [parameters setObject:[[StorageMgr singletonStorageMgr]objectForKey:@"MemberId"] forKey:@"memberId"];
@@ -90,7 +94,7 @@
         [aiv stopAnimating];
         if ([responseObject[@"resultFlag"]integerValue]==8001) {
             NSDictionary *result = responseObject[@"result"];
-            _activity = [[ActivityModel alloc]initWithDictionary:result];
+            _activity = [[ActivityModel alloc]initWithDetailDictionary:result];
             [self uiLayout];
         }else{
             //业务逻辑失败的情况下
@@ -98,15 +102,18 @@
             [Utilities popUpAlertViewWithMsg:errorMsg andTitle:nil onView:self];
         }
     } failure:^(NSInteger statusCode, NSError *error) {
+        [aiv stopAnimating];
         //失败以后要做的事情
-        NSLog(@"statusCode = %ld",(long)statusCode);
+        //NSLog(@"statusCode = %ld",(long)statusCode);
         
         [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
     }];
 }
 
 -(void)uiLayout{
-    [_activityImgView sd_setImageWithURL:[NSURL URLWithString:_activity.imgUrl] placeholderImage:[UIImage imageNamed:@"image"]];
+    [_activityImgView sd_setImageWithURL:[NSURL URLWithString:_activity.imgUrl] placeholderImage:[UIImage imageNamed:@"活动"]];
+    //调用单机事件
+    //[self addTapGestureRecognizer:_activityImgView];
     _applyFeeLbl.text = [NSString stringWithFormat:@"%@元",_activity.applyFee];
     _attendenceLbl.text = [NSString stringWithFormat:@"%@/%@",_activity.attendence,_activity.limitation];
     _typeLbl.text = _activity.type;
@@ -114,6 +121,8 @@
     _addressLbl.text = _activity.address;
     _contentLbl.text =_activity.content;
     [_phoneBtn setTitle:[NSString stringWithFormat:@"联系活动发布者%@",_activity.phone] forState:UIControlStateNormal];
+    //
+    _contentLbl.text = _activity.content;
     NSString *dueTimeStr = [Utilities dateStrFromCstampTime:_activity.duetime withDateFormat:@"yyyy-MM-dd HH:mm"];
     NSString *startTimeStr = [Utilities dateStrFromCstampTime:_activity.starttime withDateFormat:@"yyyy-MM-dd HH:mm"];
     NSString *endTimeStr = [Utilities dateStrFromCstampTime:_activity.endtime withDateFormat:@"yyyy-MM-dd HH:mm"];
@@ -171,16 +180,10 @@
     }
 }
 
-
-
-
-
-- (IBAction)applyAction:(UIButton *)sender {
-    if ([Utilities loginCheck]) {
-        PayTableViewController*purchaseVC = [Utilities getStoryboardInstance:@"Activity" byIdentity:@"Pay"];
-        //传数据到下一个页面
+- (IBAction)applyAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    if([Utilities loginCheck]){
+        PayTableViewController *purchaseVC = [Utilities getStoryboardInstance:@"Activity" byIdentity:@"Pay"];
         purchaseVC.activity = _activity;
-        //push跳转
         [self.navigationController pushViewController:purchaseVC animated:YES];
     }else{
         //获取要跳转过去的那个页面
@@ -198,6 +201,29 @@
     //从当前APP跳转到其他指定的APP中
     [[UIApplication sharedApplication] openURL:targetAppUrl];
 }
+////添加一个单击手势事件
+//- (void)addTapGestureRecognizer: (id)any{
+//    //初始化一个单机手势，设置它的响应事件为tapClick：
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
+//    //用户交互启用
+//    _activityImgView.userInteractionEnabled = YES;
+//    //将手势添加给入参
+//    [any addGestureRecognizer:tap];
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
 

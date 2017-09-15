@@ -11,120 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--我的订单-->
-        <scene sceneID="2A7-1K-wew">
-            <objects>
-                <viewController title="我的订单" id="oJ1-ME-06N" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Pnj-kj-Cih"/>
-                        <viewControllerLayoutGuide type="bottom" id="Krs-ft-B8x"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PJM-9x-gy6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pc7-FF-aJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="425" y="883"/>
-        </scene>
-        <!--我的推广-->
-        <scene sceneID="Mkd-Su-PRE">
-            <objects>
-                <viewController title="我的推广" id="o9N-Cr-a5N" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="H4i-ca-cIT"/>
-                        <viewControllerLayoutGuide type="bottom" id="oQC-sM-raq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ivn-KG-y16">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OqH-PF-HUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1926" y="1176"/>
-        </scene>
-        <!--设置-->
-        <scene sceneID="zFR-Ov-ylS">
-            <objects>
-                <viewController title="设置" id="gpY-Nj-Xyr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3Bj-LY-9BS"/>
-                        <viewControllerLayoutGuide type="bottom" id="tPU-sX-idm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="io4-AH-pRo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oFJ-MH-g3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2635" y="1097"/>
-        </scene>
-        <!--意见反馈-->
-        <scene sceneID="MUn-di-QNa">
-            <objects>
-                <viewController title="意见反馈" id="u8L-lF-X1o" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wbs-9c-Rni"/>
-                        <viewControllerLayoutGuide type="bottom" id="RDT-Js-o4N"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0nU-x8-coG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bFq-PP-gHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2775" y="1853"/>
-        </scene>
-        <!--关于我们-->
-        <scene sceneID="SDI-vu-ErX">
-            <objects>
-                <viewController title="关于我们" id="746-wR-lIC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XGR-eW-5ZD"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZFS-ah-A9c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="j5J-Qa-QRp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RCj-bd-qRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3917" y="1788"/>
-        </scene>
-        <!--修改昵称-->
-        <scene sceneID="mgd-kx-gNP">
-            <objects>
-                <viewController title="修改昵称" id="W2h-vF-iay" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8at-Db-ZUe"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZBZ-cu-UA7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x1Q-qZ-JuK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei8-vt-upY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3399" y="1074"/>
-        </scene>
         <!--Login-->
         <scene sceneID="vqF-dj-BUG">
             <objects>
@@ -265,6 +151,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPE-gt-AYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-492" y="-185"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="W3I-QU-q0p">
+            <objects>
+                <viewControllerPlaceholder id="tS2-Rj-avP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRr-0Y-FK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="248"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XKh-Wy-Y6u">

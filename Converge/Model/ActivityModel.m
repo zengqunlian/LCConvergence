@@ -28,13 +28,13 @@
     self = [super init];
     if (self) {
         _activtyId = [Utilities nullAndNilCheck:dict[@"id"] replaceBy:@"0"];
-        _imgUrl =[Utilities nullAndNilCheck:dict [@"imgUrl"] replaceBy:@"imgUrl"];
-        _content = [Utilities nullAndNilCheck:dict [@"content"] replaceBy:@"暂无内容"];
-        _name =[Utilities nullAndNilCheck:dict [@"name"] replaceBy:@"暂无名称"];
+        _imgUrl =[Utilities nullAndNilCheck:dict [@"imgUrl"] replaceBy:@""];
+        _content = [Utilities nullAndNilCheck:dict [@"content"] replaceBy:@"暂无描述"];
+        _name =[Utilities nullAndNilCheck:dict [@"name"] replaceBy:@""];
         _like = [dict[@"reliableNumber"]isKindOfClass:[NSNull class]] ? 0 :[dict[@"reliableNumber"] integerValue] ;
         _unlike = [dict[@"unReliableNumber"]isKindOfClass:[NSNull class]] ? 0 :[dict[@"unReliableNumber"] integerValue] ;
         _address = [Utilities nullAndNilCheck:dict[@"address"] replaceBy:@"活动地址待定"];
-        _applyFee = [Utilities nullAndNilCheck:dict[@"applicationFee"] replaceBy:@"0"];
+        _applyFee = [Utilities nullAndNilCheck:dict[@"applicationFee"] replaceBy:@""];
         _attendence = [Utilities nullAndNilCheck:dict[@"participantsNumber"] replaceBy:@"0"];
         _limitation = [Utilities nullAndNilCheck:dict[@"attendenceAmount"] replaceBy:@"0"];
         _type = [Utilities nullAndNilCheck:dict[@"categoryName"] replaceBy:@"普通活动"];
