@@ -114,7 +114,7 @@
                                                                 <constraint firstAttribute="height" constant="100" id="R8e-bm-Jzj"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫梵瑜伽（阳光店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUy-0E-pDQ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫梵瑜伽（阳光店" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUy-0E-pDQ">
                                                             <rect key="frame" x="199.5" y="0.0" width="106.5" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
@@ -283,27 +283,27 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-VC-OnP">
                                         <rect key="frame" x="0.0" y="186" width="375" height="80"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫梵瑜伽（阳光店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xn-Dj-yVJ">
-                                                <rect key="frame" x="20" y="5" width="139" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫梵瑜伽（阳光店)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xn-Dj-yVJ">
+                                                <rect key="frame" x="20" y="5" width="144.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-Zr-pTO">
-                                                <rect key="frame" x="20" y="36" width="20" height="20"/>
+                                                <rect key="frame" x="5" y="36" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="bYB-Zr-pTO" secondAttribute="height" multiplier="1:1" id="AK9-BJ-k6O"/>
                                                     <constraint firstAttribute="height" constant="20" id="bmC-OS-PZ0"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市南长区阳光城市花园B区76号1楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okM-0Z-8Qr">
-                                                <rect key="frame" x="50" y="42.5" width="194.5" height="13.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市南长区阳光城市花园B区76号1楼" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okM-0Z-8Qr">
+                                                <rect key="frame" x="35" y="42.5" width="194.5" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <color key="textColor" white="0.79000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0w-El-50U">
-                                                <rect key="frame" x="319" y="36" width="26" height="26"/>
+                                                <rect key="frame" x="319" y="37" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="26" id="1ne-P3-npo"/>
                                                     <constraint firstAttribute="width" secondItem="n0w-El-50U" secondAttribute="height" multiplier="1:1" id="Xvk-4D-4wE"/>
@@ -321,7 +321,7 @@
                                             <constraint firstItem="n0w-El-50U" firstAttribute="centerY" secondItem="okM-0Z-8Qr" secondAttribute="centerY" id="S8A-K2-Tlr"/>
                                             <constraint firstItem="bYB-Zr-pTO" firstAttribute="top" secondItem="4xn-Dj-yVJ" secondAttribute="bottom" constant="10" id="UNa-MK-LzQ"/>
                                             <constraint firstItem="okM-0Z-8Qr" firstAttribute="leading" secondItem="bYB-Zr-pTO" secondAttribute="trailing" constant="10" id="Ylu-f8-J6P"/>
-                                            <constraint firstItem="bYB-Zr-pTO" firstAttribute="leading" secondItem="NaS-VC-OnP" secondAttribute="leading" constant="20" id="yGl-Eb-9yq"/>
+                                            <constraint firstItem="bYB-Zr-pTO" firstAttribute="leading" secondItem="NaS-VC-OnP" secondAttribute="leading" constant="5" id="yGl-Eb-9yq"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiC-cE-gqh">
@@ -480,6 +480,17 @@
                             <constraint firstItem="uln-eI-pBI" firstAttribute="leading" secondItem="FcC-XD-fVU" secondAttribute="leading" id="zZo-ba-mVV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clubAdress" destination="okM-0Z-8Qr" id="tO6-Xf-Xq3"/>
+                        <outlet property="clubName" destination="4xn-Dj-yVJ" id="4FD-HP-rkc"/>
+                        <outlet property="currentPrice" destination="nlh-lF-ljt" id="yyI-rA-E4L"/>
+                        <outlet property="experienceImage" destination="FoC-4K-9dd" id="ek4-oX-2vC"/>
+                        <outlet property="experienceTitle" destination="y6F-Vy-GFp" id="Gqo-h7-xsm"/>
+                        <outlet property="originPrice" destination="7zr-YN-90F" id="MXs-la-1DT"/>
+                        <outlet property="sellNum" destination="Yun-pg-pMW" id="pYb-i4-FXO"/>
+                        <outlet property="useRules" destination="qaQ-dv-JsX" id="xRy-IJ-QFL"/>
+                        <outlet property="warmPrompt" destination="fZo-fQ-Bag" id="4iM-Kp-CWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VD0-FA-5QY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -515,14 +526,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市南长区阳光城市花园B区76号1楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZE-WC-cwS">
-                                                <rect key="frame" x="55" y="84" width="229" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市南长区阳光城市花园B区76号1楼" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZE-WC-cwS">
+                                                <rect key="frame" x="35" y="86.5" width="194.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="guC-IQ-UeW">
-                                                <rect key="frame" x="20" y="80" width="20" height="20"/>
+                                                <rect key="frame" x="5" y="80" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="guC-IQ-UeW" secondAttribute="height" multiplier="1:1" id="Tpr-BU-Jye"/>
                                                     <constraint firstAttribute="height" constant="20" id="h6q-Bt-f1D"/>
@@ -544,8 +555,8 @@
                                             <constraint firstItem="QTG-Aa-nRp" firstAttribute="leading" secondItem="emx-QQ-9Cx" secondAttribute="leading" constant="20" id="FGV-ZA-R2w"/>
                                             <constraint firstAttribute="trailing" secondItem="9vk-0t-Ari" secondAttribute="trailing" constant="20" id="Fej-XH-1BC"/>
                                             <constraint firstAttribute="bottom" secondItem="CZE-WC-cwS" secondAttribute="bottom" constant="20" id="OVr-Fk-oha"/>
-                                            <constraint firstItem="CZE-WC-cwS" firstAttribute="leading" secondItem="guC-IQ-UeW" secondAttribute="trailing" constant="15" id="SqV-m9-yxR"/>
-                                            <constraint firstItem="guC-IQ-UeW" firstAttribute="leading" secondItem="emx-QQ-9Cx" secondAttribute="leading" constant="20" id="VyL-dh-omM"/>
+                                            <constraint firstItem="CZE-WC-cwS" firstAttribute="leading" secondItem="guC-IQ-UeW" secondAttribute="trailing" constant="10" id="SqV-m9-yxR"/>
+                                            <constraint firstItem="guC-IQ-UeW" firstAttribute="leading" secondItem="emx-QQ-9Cx" secondAttribute="leading" constant="5" id="VyL-dh-omM"/>
                                             <constraint firstAttribute="bottom" secondItem="9vk-0t-Ari" secondAttribute="bottom" constant="20" id="bmg-eW-W1J"/>
                                             <constraint firstItem="QTG-Aa-nRp" firstAttribute="top" secondItem="emx-QQ-9Cx" secondAttribute="top" constant="20" id="oVz-wn-qJT"/>
                                         </constraints>
@@ -694,8 +705,8 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫梵瑜伽（阳光店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-Xp-37L">
-                                                <rect key="frame" x="207" y="0.0" width="139" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="207" y="0.0" width="122.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

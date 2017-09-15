@@ -34,13 +34,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
+    
+    
     [self naviConfig];
     [self request];
     [self set];
-
-
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -53,7 +53,7 @@
 #pragma mark - nav
 - (void)naviConfig {
     //设置导航条标题文字
-        self.navigationItem.title = @"会所信息";
+    self.navigationItem.title = @"会所信息";
     //设置导航条颜色（风格颜色）
     self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
     //设置导航条标题颜色
@@ -66,18 +66,18 @@
     self.navigationController.navigationBar.translucent = YES;
 }
 -(void)set{
-   
-   
+    
+    
     
 }
 #pragma mark - request
 -(void)request{
     //[[StorageMgr singletonStorageMgr] objectForKey:@"ID"];
-        NSDictionary *para = @{@"clubKeyId":[[StorageMgr singletonStorageMgr] objectForKey:@"ID"]};
+    NSDictionary *para = @{@"clubKeyId":[[StorageMgr singletonStorageMgr] objectForKey:@"ID"]};
     [RequestAPI requestURL:@"/clubController/getClubDetails" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-        //NSLog(@"responseObject: %@",responseObject);
+        // NSLog(@"responseObject: %@",responseObject);
         if([responseObject[@"resultFlag"]integerValue] == 8001){
-                                                 }
+            
             NSArray *detail = responseObject[@"result"][@"experienceInfos"];
             for (NSDictionary *dict in detail) {
                 detailModel *model = [[detailModel alloc]initWithDetailclub:dict];
@@ -86,26 +86,26 @@
                 _experienceTitleLabel.text = model.eName;
                 _moneyLabel.text = [NSString stringWithFormat:@"¥:%@", model.price];
                 _sellLabel.text = [NSString stringWithFormat:@"已售:%@", model.sell];
-               [_experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@""]];
-//                NSArray *arr = responseObject;
-//                for (NSDictionary *dict in arr){
-//                    detailModel *model1 = [[detailModel alloc]initWithclub:dict];
-//                    NSURL *url = [NSURL URLWithString:model1.clubLogo];
-//                    _clubIntroduce.text = model1.clubIntroduce;
-//                    _clubAdress.text = model1.clubAdress;
-//                    _memberNum.text = [NSString stringWithFormat:@"%@", model1.clubMember];
-//                    _personNum.text = [NSString stringWithFormat:@"%@", model1.clubPerson];
-//                    _num1.text = [NSString stringWithFormat:@"%@", model1.clubSite];
-//                    [_clubImage sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@""]];
-//                }
+                [_experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@""]];
+                //                NSArray *arr = responseObject[@"result"][@"clubFeature"];
+                //                for (NSDictionary *dict in arr){
+                detailModel *model1 = [[detailModel alloc]initWithclub:responseObject[@"result"]];
+                NSURL *url = [NSURL URLWithString:model1.clubLogo];
+                _clubIntroduce.text = model1.clubIntroduce;
+                _clubAdress.text = model1.clubAdress;
+                _memberNum.text = [NSString stringWithFormat:@"%@", model1.clubMember];
+                _personNum.text = [NSString stringWithFormat:@"%@", model1.clubPerson];
+                _num1.text = [NSString stringWithFormat:@"%@", model1.clubSite];
+                [_clubImage sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@""]];
                 
             }
+        }
         
     } failure:^(NSInteger statusCode, NSError *error) {
         NSLog(@"%ld",(long)statusCode);
     }];
-
-
+    
+    
 }
 
 @end

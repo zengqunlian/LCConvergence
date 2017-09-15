@@ -17,6 +17,7 @@
 		841E38871F611B2800A6CB28 /* experienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38861F611B2800A6CB28 /* experienceViewController.m */; };
 		841E388D1F61314A00A6CB28 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E388C1F61314A00A6CB28 /* UserModel.m */; };
 		841E38911F61365500A6CB28 /* detailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E38901F61365500A6CB28 /* detailModel.m */; };
+		842BCD671F6B687000D7DE5F /* experienceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842BCD661F6B687000D7DE5F /* experienceModel.m */; };
 		843311B61F628E310079E506 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843311B51F628E310079E506 /* FoundViewController.m */; };
 		843311BA1F628E740079E506 /* FoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843311B91F628E740079E506 /* FoundTableViewCell.m */; };
 		844309F21F5D2EA4000DED39 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844309F11F5D2EA4000DED39 /* homeViewController.m */; };
@@ -121,6 +122,8 @@
 		841E388C1F61314A00A6CB28 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		841E388F1F61365500A6CB28 /* detailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailModel.h; sourceTree = "<group>"; };
 		841E38901F61365500A6CB28 /* detailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailModel.m; sourceTree = "<group>"; };
+		842BCD651F6B687000D7DE5F /* experienceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experienceModel.h; sourceTree = "<group>"; };
+		842BCD661F6B687000D7DE5F /* experienceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = experienceModel.m; sourceTree = "<group>"; };
 		843311B41F628E310079E506 /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
 		843311B51F628E310079E506 /* FoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundViewController.m; sourceTree = "<group>"; };
 		843311B81F628E740079E506 /* FoundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundTableViewCell.h; sourceTree = "<group>"; };
@@ -347,6 +350,8 @@
 			children = (
 				841E388F1F61365500A6CB28 /* detailModel.h */,
 				841E38901F61365500A6CB28 /* detailModel.m */,
+				842BCD651F6B687000D7DE5F /* experienceModel.h */,
+				842BCD661F6B687000D7DE5F /* experienceModel.m */,
 			);
 			name = DetailModel;
 			sourceTree = "<group>";
@@ -882,6 +887,7 @@
 				B20CE0991F51482900071361 /* StorageMgr.m in Sources */,
 				B20CE0951F51482900071361 /* NSDate+Utility.m in Sources */,
 				B20CE0971F51482900071361 /* NSString+Crypt.m in Sources */,
+				842BCD671F6B687000D7DE5F /* experienceModel.m in Sources */,
 				B20CE0841F51482900071361 /* SKTagButton.m in Sources */,
 				B20CE08A1F51482900071361 /* DataSigner.m in Sources */,
 				B20CE0791F51482900071361 /* DOPDropDownMenu.m in Sources */,
