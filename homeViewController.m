@@ -127,9 +127,11 @@
 }
 #pragma mark - request
 -(void)request{
+    UIActivityIndicatorView *aiv = [Utilities getCoverOnView:self.view];
     NSDictionary *para = @{@"city":_city,@"jing":@"31.568",@"wei":@"120.299",@"page":@1,@"perPage":@10};
     [RequestAPI requestURL:@"/homepage/choice" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
        // NSLog(@"responseObject: %@",responseObject);
+        [aiv stopAnimating];
         if([responseObject[@"resultFlag"]integerValue] == 8001){
             NSArray *model =responseObject[@"advertisement"];
             for(NSDictionary *dict in model){
@@ -153,6 +155,7 @@
         }
     } failure:^(NSInteger statusCode, NSError *error) {
         NSLog(@"%ld",(long)statusCode);
+         [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
     }];
     
 }

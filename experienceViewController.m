@@ -57,9 +57,11 @@
 #pragma mark - request
 -(void)request{
     //[[StorageMgr singletonStorageMgr] objectForKey:@"ID"];
+     UIActivityIndicatorView *aiv = [Utilities getCoverOnView:self.view];
     NSDictionary *para = @{@"experienceId":[[StorageMgr singletonStorageMgr] objectForKey:@"ID"]};
     [RequestAPI requestURL:@"/clubController/experienceDetail" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-        NSLog(@"%@",responseObject);
+        //NSLog(@"%@",responseObject);
+        [aiv stopAnimating];
         if([responseObject[@"resultFlag"]integerValue] == 8001){
             experienceModel *model = [[experienceModel alloc]initWithDetailexperience:responseObject[@"result"]];
             NSURL *url1 = [NSURL URLWithString:model.experienceImage];
@@ -77,7 +79,8 @@
                     }
         NSLog(@"responseObject: %@",responseObject);
     } failure:^(NSInteger statusCode, NSError *error) {
-        
+        NSLog(@"%ld",(long)statusCode);
+        [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
     }];
 }
 /*

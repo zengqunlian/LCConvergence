@@ -73,11 +73,12 @@
 #pragma mark - request
 -(void)request{
     //[[StorageMgr singletonStorageMgr] objectForKey:@"ID"];
+    UIActivityIndicatorView *aiv = [Utilities getCoverOnView:self.view];
     NSDictionary *para = @{@"clubKeyId":[[StorageMgr singletonStorageMgr] objectForKey:@"ID"]};
     [RequestAPI requestURL:@"/clubController/getClubDetails" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
         // NSLog(@"responseObject: %@",responseObject);
+        [aiv stopAnimating];
         if([responseObject[@"resultFlag"]integerValue] == 8001){
-            
             NSArray *detail = responseObject[@"result"][@"experienceInfos"];
             for (NSDictionary *dict in detail) {
                 detailModel *model = [[detailModel alloc]initWithDetailclub:dict];
@@ -108,6 +109,8 @@
         
     } failure:^(NSInteger statusCode, NSError *error) {
         NSLog(@"%ld",(long)statusCode);
+        [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
+        
     }];
     
     
