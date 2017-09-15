@@ -22,6 +22,7 @@
 @property (strong,nonatomic)NSString *eName;
 @property (strong,nonatomic)NSString *price;
 @property (strong,nonatomic)NSString *sell;
+@property (strong,nonatomic)NSString *time;
 
 //- (instancetype)initWithDetailexperience:(NSDictionary *)dict;
 - (instancetype)initWithDetailclub:(NSDictionary *)dict;

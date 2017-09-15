@@ -18,5 +18,9 @@
 @property (strong,nonatomic)NSString *rule;
 @property (strong,nonatomic)NSString *prompt;
 @property (strong,nonatomic)NSString *sell;
+@property (strong,nonatomic)NSString *startTime;
+@property (strong,nonatomic)NSString *endTime;
+@property (strong,nonatomic)NSString *useTime;
+@property (strong,nonatomic)NSString *useRule;
 - (instancetype)initWithDetailexperience:(NSDictionary *)dict;
 @end

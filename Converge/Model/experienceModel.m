@@ -21,6 +21,9 @@
         self.rule = [Utilities nullAndNilCheck:dict[@"rules"] replaceBy:@"未知"];
         self.prompt = [Utilities nullAndNilCheck:dict[@"ePromot"] replaceBy:@"未知"];
         self.sell = [Utilities nullAndNilCheck:dict[@"saleCount"] replaceBy:@"0"];
+        self.useRule = [Utilities nullAndNilCheck:dict[@"rules"] replaceBy:@""];
+        self.startTime = [Utilities nullAndNilCheck:dict[@"beginDate"] replaceBy:@""];
+        self.endTime = [Utilities nullAndNilCheck:dict[@"endDate"] replaceBy:@""];
         
     }
     return self;

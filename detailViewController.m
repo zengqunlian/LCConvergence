@@ -86,16 +86,21 @@
                 _experienceTitleLabel.text = model.eName;
                 _moneyLabel.text = [NSString stringWithFormat:@"¥:%@", model.price];
                 _sellLabel.text = [NSString stringWithFormat:@"已售:%@", model.sell];
+                //NSLog(@"%@",model.price);
+                //NSLog(@"%@",model.sell);
                 [_experienceImageView sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@""]];
                 //                NSArray *arr = responseObject[@"result"][@"clubFeature"];
                 //                for (NSDictionary *dict in arr){
                 detailModel *model1 = [[detailModel alloc]initWithclub:responseObject[@"result"]];
                 NSURL *url = [NSURL URLWithString:model1.clubLogo];
                 _clubIntroduce.text = model1.clubIntroduce;
+                //NSLog(@"%@",model1.clubIntroduce);
                 _clubAdress.text = model1.clubAdress;
                 _memberNum.text = [NSString stringWithFormat:@"%@", model1.clubMember];
                 _personNum.text = [NSString stringWithFormat:@"%@", model1.clubPerson];
                 _num1.text = [NSString stringWithFormat:@"%@", model1.clubSite];
+                _timeLabel.text = model1.time;
+                //NSLog(@"%@",model1.time);
                 [_clubImage sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@""]];
                 
             }

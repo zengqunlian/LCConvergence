@@ -16,8 +16,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *clubName;
 @property (weak, nonatomic) IBOutlet UILabel *clubAdress;
 @property (weak, nonatomic) IBOutlet UILabel *sellNum;
-@property (weak, nonatomic) IBOutlet UIView *useRules;
 @property (weak, nonatomic) IBOutlet UIView *warmPrompt;
+@property (weak, nonatomic) IBOutlet UITextView *useRules;
+@property (weak, nonatomic) IBOutlet UILabel *startTime;
+@property (weak, nonatomic) IBOutlet UILabel *endTime;
+@property (weak, nonatomic) IBOutlet UILabel *useTime;
 
 @end
 
@@ -56,7 +59,7 @@
     //[[StorageMgr singletonStorageMgr] objectForKey:@"ID"];
     NSDictionary *para = @{@"experienceId":[[StorageMgr singletonStorageMgr] objectForKey:@"ID"]};
     [RequestAPI requestURL:@"/clubController/experienceDetail" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-        //NSLog(@"%@",responseObject);
+        NSLog(@"%@",responseObject);
         if([responseObject[@"resultFlag"]integerValue] == 8001){
             experienceModel *model = [[experienceModel alloc]initWithDetailexperience:responseObject[@"result"]];
             NSURL *url1 = [NSURL URLWithString:model.experienceImage];
@@ -67,6 +70,9 @@
             _originPrice.text = [NSString stringWithFormat:@"原价:%@",model.orginPrice];
             _sellNum.text = [NSString stringWithFormat:@"已售:%@",model.sell];
             _clubAdress.text = model.experienceAddress;
+            _useRules.text = model.useRule;
+            _startTime.text = model.startTime;
+            _endTime.text = model.endTime;
             [_experienceImage sd_setImageWithURL:url1 placeholderImage:[UIImage imageNamed:@""]];
                     }
         NSLog(@"responseObject: %@",responseObject);

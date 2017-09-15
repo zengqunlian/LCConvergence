@@ -34,6 +34,8 @@
         self.clubPerson = [Utilities nullAndNilCheck:dict[@"clubPerson"] replaceBy:@"未知"];
         self.clubAdress = [Utilities nullAndNilCheck:dict[@"clubAddressB"] replaceBy:@"未知"];
         self.clubSite = [Utilities nullAndNilCheck:dict[@"clubSite"] replaceBy:@"0"];
+        self.time = [Utilities nullAndNilCheck:dict[@"clubTime"] replaceBy:@""];
+        self.clubIntroduce = [Utilities nullAndNilCheck:dict[@"clubIntroduce"] replaceBy:@"wu"];
  
     }
     return self;
