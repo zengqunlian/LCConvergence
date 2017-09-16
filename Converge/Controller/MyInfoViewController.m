@@ -91,13 +91,19 @@ _arr =@[@{@"title":@"我的订单"},@{@"title":@"我的推广"},@{@"title":@"积
                     
                 }
                     break;
-                case 1:
+                case 1:{
+                    [self performSegueWithIdentifier:@"MyInfo2Order" sender:self];
+                }
                     
                     break;
-                case 2:
+                case 2:{
+                    [self performSegueWithIdentifier:@"MyInfo2MyPromote" sender:self];
+                }
                     
                     break;
-                case 3:
+                case 3:{
+                    [self performSegueWithIdentifier:@"MyInfo2My" sender:self];
+                }
                     
                     break;
                 case 4:

@@ -19,6 +19,22 @@
             </objects>
             <point key="canvasLocation" x="68" y="-706"/>
         </scene>
+        <!--Order-->
+        <scene sceneID="zJI-TN-kGQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Order" id="Ert-Hl-3Gz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9H-sa-9w8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="-569"/>
+        </scene>
+        <!--MyPromote-->
+        <scene sceneID="F00-aM-9u1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyPromote" id="JmW-JZ-rZX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPl-xK-4wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="-524"/>
+        </scene>
         <!--My Info View Controller-->
         <scene sceneID="LhR-e0-HP2">
             <objects>
@@ -146,19 +162,22 @@
                         <outlet property="tableView" destination="h4h-nl-yx9" id="ms0-eN-vjO"/>
                         <outlet property="userNameLbl" destination="Wut-cc-F9c" id="uzY-jA-FOP"/>
                         <segue destination="YZX-f0-hLg" kind="presentation" identifier="Let2MyAct" id="9i3-9U-vwq"/>
+                        <segue destination="tS2-Rj-avP" kind="presentation" identifier="MyInfo2My" id="v1b-6L-s8c"/>
+                        <segue destination="Ert-Hl-3Gz" kind="presentation" identifier="MyInfo2Order" id="iEg-NL-vRc"/>
+                        <segue destination="JmW-JZ-rZX" kind="presentation" identifier="MyInfo2MyPromote" id="3Ov-Gl-F1h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPE-gt-AYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492" y="-185"/>
+            <point key="canvasLocation" x="-321" y="-165"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--My-->
         <scene sceneID="W3I-QU-q0p">
             <objects>
-                <viewControllerPlaceholder id="tS2-Rj-avP" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="My" id="tS2-Rj-avP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRr-0Y-FK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="248"/>
+            <point key="canvasLocation" x="132" y="-651"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XKh-Wy-Y6u">
@@ -176,7 +195,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewJ-yx-BzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="-165"/>
+            <point key="canvasLocation" x="614" y="-141"/>
         </scene>
         <!--我参与的活动-->
         <scene sceneID="yjQ-my-eWK">
@@ -201,7 +220,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmI-DP-P7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1254" y="-165"/>
+            <point key="canvasLocation" x="1454" y="-141"/>
         </scene>
     </scenes>
     <resources>
