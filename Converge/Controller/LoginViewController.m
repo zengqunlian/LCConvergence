@@ -137,12 +137,12 @@
         [_aiv stopAnimating];
         NSLog(@"responseObject = %@", responseObject);
         if ([responseObject[@"resultFlag"] integerValue] == 8001) {
-          //  NSDictionary *result = responseObject[@"result"];
-         //  UserModel *user = [[UserModel alloc]initWithDictionary:result];
-//            //将登陆获取到的用户信息打包存储到单立化全局变量中
-//            [[StorageMgr singletonStorageMgr]addKey:@"MemberInfo" andValue:user];
-//            //单独将用户的ID也存储进单例化全局变量来作为用户是否已经登陆的判断依据，同时也方便其他所有页面更快捷的使用用户Id这个参数
-//            [[StorageMgr singletonStorageMgr] addKey:@"MemberId" andValue:user.memberId];
+            NSDictionary *result = responseObject[@"result"];
+           UserModel *user = [[UserModel alloc]initWithDictionary:result];
+            //将登陆获取到的用户信息打包存储到单立化全局变量中
+            [[StorageMgr singletonStorageMgr]addKey:@"MemberInfo" andValue:user];
+            //单独将用户的ID也存储进单例化全局变量来作为用户是否已经登陆的判断依据，同时也方便其他所有页面更快捷的使用用户Id这个参数
+            [[StorageMgr singletonStorageMgr] addKey:@"MemberId" andValue:user.memberId];
             //收起有可能没有收回去的键盘（如果键盘还打开着让它收回去）
             [self.view endEditing:YES];
             //清空密码输入框里的内容

@@ -29,23 +29,23 @@
     // Do any additional setup after loading the view.
 }
 
-//-(void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    if ([Utilities loginCheck]) {
-//        //已登录
-//        _loginBtn.hidden = YES;
-//        _userNameLbl.hidden = NO;
-//        UserModel *user = [[StorageMgr singletonStorageMgr]objectForKey:@"MemberInfo"];
-//        [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"Avatar"]];
-//        _userNameLbl.text = user.nickname;
-//    }else{
-//        //未登录
-//        _loginBtn.hidden = NO;
-//        _userNameLbl.hidden = YES;
-//        _avatarImageView.image= [UIImage imageNamed:@"Avatar"];
-//        _userNameLbl.text = @"客户";
-//    }
-//}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if ([Utilities loginCheck]) {
+        //已登录
+        _loginBtn.hidden = YES;
+        _userNameLbl.hidden = NO;
+        UserModel *user = [[StorageMgr singletonStorageMgr]objectForKey:@"MemberInfo"];
+        [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"Avatar"]];
+        _userNameLbl.text = user.nickname;
+    }else{
+        //未登录
+        _loginBtn.hidden = NO;
+        _userNameLbl.hidden = YES;
+        _avatarImageView.image= [UIImage imageNamed:@"Avatar"];
+        _userNameLbl.text = @"客户";
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -83,27 +83,26 @@ _arr =@[@{@"title":@"我的订单"},@{@"title":@"我的推广"},@{@"title":@"积
 //按住细胞以后（取消选择）
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.section == 0) {
+    //if (indexPath.section == 0) {
         if ([Utilities loginCheck]) {
-            switch (indexPath.row) {
-                case 0:{
-                    [self performSegueWithIdentifier:@"Let2MyAct" sender:self];
-                    
-                }
-                    break;
-                case 1:{
+            switch (indexPath.section) {
+                case 0:
                     [self performSegueWithIdentifier:@"MyInfo2Order" sender:self];
-                }
                     
+                
                     break;
-                case 2:{
+                case 1:
                     [self performSegueWithIdentifier:@"MyInfo2MyPromote" sender:self];
-                }
+                
                     
                     break;
-                case 3:{
+                case 2:
                     [self performSegueWithIdentifier:@"MyInfo2My" sender:self];
-                }
+                
+                    break;
+                case 3:
+                    [self performSegueWithIdentifier:@"MyInfo2My" sender:self];
+                
                     
                     break;
                 case 4:
@@ -118,7 +117,7 @@ _arr =@[@{@"title":@"我的订单"},@{@"title":@"我的推广"},@{@"title":@"积
             [self presentViewController:signNavi animated:YES completion:nil];
         }
     }
-}
+//}
 
 
 /*

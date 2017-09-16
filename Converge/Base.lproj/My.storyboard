@@ -12,7 +12,7 @@
         <!--我的-->
         <scene sceneID="G6b-4t-NIU">
             <objects>
-                <viewController id="tQA-Xl-eGX" sceneMemberID="viewController">
+                <viewController id="tQA-Xl-eGX" customClass="MyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g7U-hE-xxc"/>
                         <viewControllerLayoutGuide type="bottom" id="eDP-UL-MKn"/>
