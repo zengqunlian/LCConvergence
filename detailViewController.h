@@ -7,5 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "homeModel.h"
 @interface detailViewController : UIViewController
+
+@property (strong, nonatomic)homeModel *home;
+
 @end
