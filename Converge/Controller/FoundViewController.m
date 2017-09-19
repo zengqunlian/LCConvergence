@@ -74,7 +74,7 @@
 
 //这个方法专门做导航条的控制
 - (void)naviConfig{
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     //设置导航条标题的文字
     self.navigationItem.title = @"发现";
     //设置导航条的颜色（风格颜色）

@@ -101,14 +101,16 @@ _arr =@[@{@"title":@"我的订单"},@{@"title":@"我的推广"},@{@"title":@"积
                 
                     break;
                 case 3:
-                    [self performSegueWithIdentifier:@"MyInfo2My" sender:self];
+                    [self performSegueWithIdentifier:@"MyInfo2Setting" sender:self];
                 
                     
                     break;
                 case 4:
+                    [self performSegueWithIdentifier:@"MyInfo2Opinion" sender:self];
                     
                     break;
                 default:
+                    [self performSegueWithIdentifier:@"MyInfo2AboutUs" sender:self];
                     break;
             }
         }else{
