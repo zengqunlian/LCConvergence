@@ -47,6 +47,13 @@
 		84EAEC421F71320900494C60 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAEC411F71320900494C60 /* AboutUsViewController.m */; };
 		84EAEC451F71372A00494C60 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EAEC431F71372A00494C60 /* Setting.storyboard */; };
 		84EAEC481F7137E100494C60 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAEC471F7137E100494C60 /* SettingViewController.m */; };
+		84F425EA1F72109700520485 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425E91F72109700520485 /* SettingTableViewCell.m */; };
+		84F425F01F724E2000520485 /* PurchaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425EF1F724E2000520485 /* PurchaseTableViewController.m */; };
+		84F425F31F724E5F00520485 /* PurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425F21F724E5F00520485 /* PurchaseTableViewCell.m */; };
+		84F425F61F7255A100520485 /* PurchaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425F51F7255A100520485 /* PurchaseModel.m */; };
+		84F425F91F72739900520485 /* FoundDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425F81F72739900520485 /* FoundDetailViewController.m */; };
+		84F425FC1F72746400520485 /* ClubDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425FB1F72746400520485 /* ClubDetailModel.m */; };
+		84F425FF1F72786D00520485 /* FExperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F425FE1F72786D00520485 /* FExperTableViewCell.m */; };
 		B20CDFEE1F51455700071361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFED1F51455700071361 /* main.m */; };
 		B20CDFF11F51455700071361 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CDFF01F51455700071361 /* AppDelegate.m */; };
 		B20CDFF71F51455700071361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20CDFF51F51455700071361 /* Main.storyboard */; };
@@ -187,6 +194,20 @@
 		84EAEC461F7137E100494C60 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		84EAEC471F7137E100494C60 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		84EF30A05B94EA52954C21A3 /* Pods-Converge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Converge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Converge/Pods-Converge.debug.xcconfig"; sourceTree = "<group>"; };
+		84F425E81F72109700520485 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		84F425E91F72109700520485 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		84F425EE1F724E2000520485 /* PurchaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseTableViewController.h; sourceTree = "<group>"; };
+		84F425EF1F724E2000520485 /* PurchaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseTableViewController.m; sourceTree = "<group>"; };
+		84F425F11F724E5F00520485 /* PurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseTableViewCell.h; sourceTree = "<group>"; };
+		84F425F21F724E5F00520485 /* PurchaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseTableViewCell.m; sourceTree = "<group>"; };
+		84F425F41F7255A100520485 /* PurchaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseModel.h; sourceTree = "<group>"; };
+		84F425F51F7255A100520485 /* PurchaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseModel.m; sourceTree = "<group>"; };
+		84F425F71F72739900520485 /* FoundDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundDetailViewController.h; sourceTree = "<group>"; };
+		84F425F81F72739900520485 /* FoundDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundDetailViewController.m; sourceTree = "<group>"; };
+		84F425FA1F72746400520485 /* ClubDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubDetailModel.h; sourceTree = "<group>"; };
+		84F425FB1F72746400520485 /* ClubDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubDetailModel.m; sourceTree = "<group>"; };
+		84F425FD1F72786D00520485 /* FExperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FExperTableViewCell.h; sourceTree = "<group>"; };
+		84F425FE1F72786D00520485 /* FExperTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FExperTableViewCell.m; sourceTree = "<group>"; };
 		B20CDFE91F51455700071361 /* Converge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20CDFED1F51455700071361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B20CDFEF1F51455700071361 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -415,6 +436,10 @@
 				84C94B991F6BFC7C008F5C32 /* experienceViewController.m */,
 				847ACF891F6227A2000ED30D /* detailViewController.h */,
 				84C94B9B1F6BFC91008F5C32 /* detailViewController.m */,
+				84F425EE1F724E2000520485 /* PurchaseTableViewController.h */,
+				84F425EF1F724E2000520485 /* PurchaseTableViewController.m */,
+				84F425F11F724E5F00520485 /* PurchaseTableViewCell.h */,
+				84F425F21F724E5F00520485 /* PurchaseTableViewCell.m */,
 			);
 			name = homeViewController;
 			sourceTree = "<group>";
@@ -445,8 +470,6 @@
 				84EAEC3E1F712EDF00494C60 /* OpinionViewController.m */,
 				84EAEC401F71320900494C60 /* AboutUsViewController.h */,
 				84EAEC411F71320900494C60 /* AboutUsViewController.m */,
-				84EAEC461F7137E100494C60 /* SettingViewController.h */,
-				84EAEC471F7137E100494C60 /* SettingViewController.m */,
 			);
 			name = MyInfoViewController;
 			sourceTree = "<group>";
@@ -472,6 +495,10 @@
 			children = (
 				84CEE4041F6D11D5000769B0 /* FoundViewController.h */,
 				84CEE4051F6D11D5000769B0 /* FoundViewController.m */,
+				84F425F71F72739900520485 /* FoundDetailViewController.h */,
+				84F425F81F72739900520485 /* FoundDetailViewController.m */,
+				84F425FD1F72786D00520485 /* FExperTableViewCell.h */,
+				84F425FE1F72786D00520485 /* FExperTableViewCell.m */,
 			);
 			name = FoundViewController;
 			sourceTree = "<group>";
@@ -484,6 +511,25 @@
 				84EAEC341F7101E200494C60 /* OrderTableViewCell.m */,
 			);
 			name = OrderView;
+			sourceTree = "<group>";
+		};
+		84F425E61F720E2000520485 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EAEC461F7137E100494C60 /* SettingViewController.h */,
+				84EAEC471F7137E100494C60 /* SettingViewController.m */,
+			);
+			name = SettingViewController;
+			sourceTree = "<group>";
+		};
+		84F425E71F72106300520485 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				84EAEC431F71372A00494C60 /* Setting.storyboard */,
+				84F425E81F72109700520485 /* SettingTableViewCell.h */,
+				84F425E91F72109700520485 /* SettingTableViewCell.m */,
+			);
+			name = SettingView;
 			sourceTree = "<group>";
 		};
 		B20CDFE01F51455700071361 = {
@@ -638,6 +684,7 @@
 		B20CE0441F51482900071361 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84F425E61F720E2000520485 /* SettingViewController */,
 				84E9113B1F616C0300281B0B /* FoundViewController */,
 				84E9112E1F616ADA00281B0B /* ActivityViewController */,
 				84E911091F6125F800281B0B /* MyInfoViewController */,
@@ -658,6 +705,10 @@
 				B20CE0491F51482900071361 /* Order.m */,
 				84EAEC3A1F71056E00494C60 /* OrderModel.h */,
 				84EAEC3B1F71056E00494C60 /* OrderModel.m */,
+				84F425F41F7255A100520485 /* PurchaseModel.h */,
+				84F425F51F7255A100520485 /* PurchaseModel.m */,
+				84F425FA1F72746400520485 /* ClubDetailModel.h */,
+				84F425FB1F72746400520485 /* ClubDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -730,13 +781,13 @@
 		B20CE0771F51482900071361 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84F425E71F72106300520485 /* SettingView */,
 				84EAEC361F7101EC00494C60 /* OrderView */,
 				843311B71F628E580079E506 /* FoundView */,
 				841E387A1F61194900A6CB28 /* HomeView */,
 				B20CDFF51F51455700071361 /* Main.storyboard */,
 				B20CDFFD1F51455700071361 /* LaunchScreen.storyboard */,
 				84C94B791F6BF3EE008F5C32 /* MyPromote.storyboard */,
-				84EAEC431F71372A00494C60 /* Setting.storyboard */,
 				84E910F21F60DBC000281B0B /* Assets.xcassets */,
 			);
 			path = View;
@@ -943,6 +994,7 @@
 				B20CE0891F51482900071361 /* base64.m in Sources */,
 				84CEE40C1F6D17CA000769B0 /* FoundCollectionViewCell.m in Sources */,
 				B20CE0871F51482900071361 /* Order.m in Sources */,
+				84F425F91F72739900520485 /* FoundDetailViewController.m in Sources */,
 				B20CE08C1F51482900071361 /* MD5DataSigner.m in Sources */,
 				B20CE09B1F51482900071361 /* Utilities.m in Sources */,
 				B20CDFF11F51455700071361 /* AppDelegate.m in Sources */,
@@ -960,6 +1012,7 @@
 				84C94B781F6BF1E5008F5C32 /* OrderViewController.m in Sources */,
 				84C94B9A1F6BFC7C008F5C32 /* experienceViewController.m in Sources */,
 				B20CE0841F51482900071361 /* SKTagButton.m in Sources */,
+				84F425F31F724E5F00520485 /* PurchaseTableViewCell.m in Sources */,
 				B20CE08A1F51482900071361 /* DataSigner.m in Sources */,
 				B20CE0791F51482900071361 /* DOPDropDownMenu.m in Sources */,
 				B20CE0821F51482900071361 /* BasicEncodingRules.m in Sources */,
@@ -974,6 +1027,7 @@
 				84C94B9C1F6BFC91008F5C32 /* detailViewController.m in Sources */,
 				B20CE07C1F51482900071361 /* mask.m in Sources */,
 				B20CE09A1F51482900071361 /* UIImage+MDQRCode.m in Sources */,
+				84F425FF1F72786D00520485 /* FExperTableViewCell.m in Sources */,
 				B20CE0881F51482900071361 /* GBAlipayManager.m in Sources */,
 				84C94B8B1F6BFA8C008F5C32 /* MyInfoViewController.m in Sources */,
 				B20CE0921F51482900071361 /* ErrorHandler.m in Sources */,
@@ -987,13 +1041,17 @@
 				84C94B941F6BFC55008F5C32 /* SiginViewController.m in Sources */,
 				B20CE0811F51482900071361 /* split.m in Sources */,
 				84C94B911F6BFC44008F5C32 /* LoginViewController.m in Sources */,
+				84F425F01F724E2000520485 /* PurchaseTableViewController.m in Sources */,
 				B20CE07E1F51482900071361 /* qrinput.m in Sources */,
 				84CEE40F1F6D1978000769B0 /* FoundModel.m in Sources */,
 				B20CE0851F51482900071361 /* SKTagView.m in Sources */,
+				84F425EA1F72109700520485 /* SettingTableViewCell.m in Sources */,
 				84EAEC481F7137E100494C60 /* SettingViewController.m in Sources */,
 				B20CE0961F51482900071361 /* NSDateFormatter+Category.m in Sources */,
+				84F425F61F7255A100520485 /* PurchaseModel.m in Sources */,
 				B20CE08B1F51482900071361 /* DataVerifier.m in Sources */,
 				B20CE0911F51482900071361 /* AppAPIClient.m in Sources */,
+				84F425FC1F72746400520485 /* ClubDetailModel.m in Sources */,
 				84C94B871F6BFA1F008F5C32 /* ActivityDetailViewController.m in Sources */,
 				B20CDFEE1F51455700071361 /* main.m in Sources */,
 				B20CE07D1F51482900071361 /* qrencode.m in Sources */,

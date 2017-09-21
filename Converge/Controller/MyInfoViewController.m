@@ -36,13 +36,13 @@
         _loginBtn.hidden = YES;
         _userNameLbl.hidden = NO;
         UserModel *user = [[StorageMgr singletonStorageMgr]objectForKey:@"MemberInfo"];
-        [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"Avatar"]];
+        [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"ic_user_head"]];
         _userNameLbl.text = user.nickname;
     }else{
         //未登录
         _loginBtn.hidden = NO;
         _userNameLbl.hidden = YES;
-        _avatarImageView.image= [UIImage imageNamed:@"Avatar"];
+        _avatarImageView.image= [UIImage imageNamed:@"ic_user_head"];
         _userNameLbl.text = @"客户";
     }
 }

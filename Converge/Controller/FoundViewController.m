@@ -59,7 +59,9 @@
     pageSize = 10;
     //初始化一个单机手势，设置它的响应事件为tapClick
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick)];
+    //签协议
     tapGesture.delegate = self;
+    //将手势添加到membraneView视图上（在这个视图上点击事件有效可以调用方法
     [self.whiteView addGestureRecognizer:tapGesture];
     [self naviConfig];
     [self setRefreshControl];
@@ -78,7 +80,7 @@
     //设置导航条标题的文字
     self.navigationItem.title = @"发现";
     //设置导航条的颜色（风格颜色）
-    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
     //设置导航条标题颜色
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     //设置导航条是否被隐藏
@@ -93,9 +95,9 @@
 - (void)tapClick{
     _whiteView.hidden = YES;
 }
-
+//手指触摸屏幕后回调的方法，返回NO则不再进行手势识别，方法触发等 此方法在window对象在有触摸事件发生时，调用gesture recognizer的touchesBegan:withEvent:方法之前调用，如果返回NO,则gesture recognizer不会看到此触摸事件。(默认情况下为YES)
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
-    
+    //判断点击的位置是否在tableview上，如果是就将蒙层上的手势失效，响应tableview上的手势（tableview可以被点击）
     if ([touch.view isDescendantOfView:self.tableView]) {
         return NO;
     }
@@ -103,11 +105,12 @@
 }
 
 #pragma mark - tableView
+//细胞高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 30.f;
 }
 
-//筛选条件
+//筛选条件（有多少行  对应的section有多少个元素）
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(flag == 1){
         return _city.count;
@@ -120,7 +123,7 @@
     }
     return 0;
 }
-
+//细胞长什么样
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     FoundTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tableViewCell"];
     
@@ -161,25 +164,25 @@
     }
     if(flag == 2){
         
-        if(indexPath.row == 0){
-            [self KindClubRequestData];
-        }
-        if(indexPath.row == 1){
-            _kindId = @"1";
-            [self KindClubRequestData];
-        }
-        if(indexPath.row == 2){
-            _kindId = @"2";
-            [self KindClubRequestData];
-        }
-        if(indexPath.row == 3){
-           _kindId = @"3";
-            [self KindClubRequestData];
-        }
-        if(indexPath.row == 4){
-            _kindId = @"4";
-            [self KindClubRequestData];
-        }
+//        if(indexPath.row == 0){
+//            [self KindClubRequestData];
+//        }
+//        if(indexPath.row == 1){
+//            _kindId = @"1";
+//            [self KindClubRequestData];
+//        }
+//        if(indexPath.row == 2){
+//            _kindId = @"2";
+//            [self KindClubRequestData];
+//        }
+//        if(indexPath.row == 3){
+//           _kindId = @"3";
+//            [self KindClubRequestData];
+//        }
+//        if(indexPath.row == 4){
+//            _kindId = @"4";
+//            [self KindClubRequestData];
+//        }
     }
     if(flag == 3){
         if(indexPath.row == 0){
@@ -208,6 +211,7 @@
     cell.distanceLbl.text = [NSString stringWithFormat:@"%@米",model.distance];
     NSURL *url = [NSURL URLWithString:model.image];
     [cell.imageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"默认"]];
+    // 选中时cell的背景视图
     UIView *sbv = [UIView new];
     sbv.backgroundColor = UIColorFromRGB(170, 170, 170);
     cell.selectedBackgroundView = sbv;
@@ -261,7 +265,7 @@
         if(_kindId == nil){
             [self clubRequest];
         }else{
-            [self KindClubRequest];
+            //[self KindClubRequest];
         }
 
         return;
@@ -320,9 +324,9 @@
     FoundModel *model = _arr[indexPath.row];
     NSString *clubId = model.clubId;
     [[StorageMgr singletonStorageMgr] addKey:@"clubId" andValue:clubId];
-    
-    detailViewController  *controller = [Utilities getStoryboardInstance:@"Home" byIdentity:@"Detail"];
-    [self.navigationController pushViewController:controller animated:YES];
+    NSLog(@"1111111:%@",clubId);
+    //detailViewController  *controller = [Utilities getStoryboardInstance:@"Home" byIdentity:@"Detail"];
+   // [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - request
@@ -331,7 +335,7 @@
     _avi = [Utilities getCoverOnView:self.view];
     [self typeRequest];
 }
-
+//请求健身类型Id
 - (void)typeRequest{
     NSDictionary *para =  @{@"city":@"无锡"};
     [RequestAPI requestURL:@"/clubController/getNearInfos" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
@@ -344,10 +348,13 @@
                 FoundModel *model = [[FoundModel alloc]initWithType:dict];
                 [_arr1 addObject:model];
             }
+            //根据页码数来判断上拉翻页（为1清空数组，为2则在原有的数据上添加）
             if(pageNum == 1){
                 [_kindOf removeAllObjects];
             }
+            //数组初始化并把全部分类设置为默认标题
             _kindOf  = [[NSMutableArray alloc]initWithObjects:@"全部分类", nil];
+            //拿取数组前四个种类
             for(int i = 0; i < 4;i++){
                 FoundModel *model = _arr1[i];
                 [_kindOf addObject:model.fName];
@@ -467,79 +474,80 @@
     }];
     
 }
--(void)KindClubRequestData{
-    _avi = [Utilities getCoverOnView:self.view];
-    [self KindClubRequest];
-}
+//-(void)KindClubRequestData{
+//    _avi = [Utilities getCoverOnView:self.view];
+//    [self KindClubRequest];
+//}
 
 //按种类请求会所
-- (void)KindClubRequest{
-    _whiteView.hidden = YES;
-    //NSLog(@"种类");
-    NSDictionary *para =  @{@"city":@"无锡",@"jing":@"120.300000",@"wei":@"31.570000",@"page":@(pageNum),@"perPage":@(pageSize),@"Type":@0,@"featureId":_kindOf};
-    [RequestAPI requestURL:@"/clubController/nearSearchClub" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
-        // NSLog(@"responseObject:%@", responseObject);
-        [_avi stopAnimating];
-        UIRefreshControl *ref = (UIRefreshControl *)[_collectionView viewWithTag:10001];
-        [ref endRefreshing];
-        if([responseObject[@"resultFlag"] integerValue] == 8001){
-            NSDictionary *result = responseObject[@"result"];
-            NSArray *array = result[@"models"];
-            NSDictionary  *pageDict =result[@"pagingInfo"];
-            totalPage = [pageDict[@"totalPage"]integerValue];
-            if(pageNum == 1){
-                [_arr
-                 removeAllObjects];
-            }
-            
-            for(NSDictionary *dict in array){
-                FoundModel *model = [[FoundModel alloc]initWithClub:dict];
-                
-                [_arr addObject:model];
-                
-            }
-            [_collectionView reloadData];
-        }else{
-            //业务逻辑失败的情况下
-            NSString *errorMsg = [ErrorHandler getProperErrorString:[responseObject[@"result"] integerValue]];
-            [Utilities popUpAlertViewWithMsg:errorMsg andTitle:nil onView:self];
-        }
-        
-    } failure:^(NSInteger statusCode, NSError *error) {
-        [_avi stopAnimating];
-        UIRefreshControl *ref = (UIRefreshControl *)[_collectionView viewWithTag:10001];
-        [ref endRefreshing];
-        [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
-    }];
-    
-}
+//- (void)KindClubRequest{
+//    _whiteView.hidden = YES;
+//    //NSLog(@"种类");
+//    NSDictionary *para =  @{@"city":@"无锡",@"jing":@"120.300000",@"wei":@"31.570000",@"page":@(pageNum),@"perPage":@(pageSize),@"Type":@0,@"featureId":_kindOf};
+//    [RequestAPI requestURL:@"/clubController/nearSearchClub" withParameters:para andHeader:nil byMethod:kGet andSerializer:kForm success:^(id responseObject) {
+//        // NSLog(@"responseObject:%@", responseObject);
+//        [_avi stopAnimating];
+//        UIRefreshControl *ref = (UIRefreshControl *)[_collectionView viewWithTag:10001];
+//        [ref endRefreshing];
+//        if([responseObject[@"resultFlag"] integerValue] == 8001){
+//            NSDictionary *result = responseObject[@"result"];
+//            NSArray *array = result[@"models"];
+//            NSDictionary  *pageDict =result[@"pagingInfo"];
+//            totalPage = [pageDict[@"totalPage"]integerValue];
+//            if(pageNum == 1){
+//                [_arr
+//                 removeAllObjects];
+//            }
+//            
+//            for(NSDictionary *dict in array){
+//                FoundModel *model = [[FoundModel alloc]initWithClub:dict];
+//                
+//                [_arr addObject:model];
+//                
+//            }
+//            [_collectionView reloadData];
+//        }else{
+//            //业务逻辑失败的情况下
+//            NSString *errorMsg = [ErrorHandler getProperErrorString:[responseObject[@"result"] integerValue]];
+//            [Utilities popUpAlertViewWithMsg:errorMsg andTitle:nil onView:self];
+//        }
+//        
+//    } failure:^(NSInteger statusCode, NSError *error) {
+//        [_avi stopAnimating];
+//        UIRefreshControl *ref = (UIRefreshControl *)[_collectionView viewWithTag:10001];
+//        [ref endRefreshing];
+//        [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
+//    }];
+//    
+//}
 -(void)TypeClubRequestData{
     _avi = [Utilities getCoverOnView:self.view];
     
 }
-- (void)typeClubRequest{
+- (void)typeClubRequest{ 
 }
 
 
 - (IBAction)cityAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    flag = 1;
-    self.height.constant = _city.count *40 ;
-    _whiteView.hidden = NO;
-    [_tableView reloadData];
+//    flag = 1;
+//    //每个高度为40
+//    self.height.constant = _city.count *40 ;
+//    _whiteView.hidden = NO;
+//    [_tableView reloadData];
 }
     
 - (IBAction)kindOfAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    flag = 2;
-    self.height.constant = _kindOf.count *40 ;
-    _whiteView.hidden = NO;
-    [_tableView reloadData];
+//    flag = 2;
+//    self.height.constant = _kindOf.count *40 ;
+//    _whiteView.hidden = NO;
+//    [_tableView reloadData];
 }
 
 - (IBAction)distanceAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    flag = 3;
-    self.height.constant = _distance.count *40;
-    _whiteView.hidden = NO;
-    [_tableView reloadData];
+//    flag = 3;
+//    self.height.constant = _distance.count *40;
+//    _whiteView.hidden = NO;
+//    [_tableView reloadData];
 
 }
 @end

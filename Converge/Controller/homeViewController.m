@@ -73,10 +73,10 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
-        return 200.f;
+        return 120.f;
     }
     else{
-        return 200.f;
+        return 120.f;
     }
 }
 //细胞长什么样

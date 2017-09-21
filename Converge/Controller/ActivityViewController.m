@@ -46,7 +46,7 @@
     //设置导航条标题的文字
     self.navigationItem.title = @"活动列表";
     //设置导航条的颜色（风格颜色）
-    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
     //设置导航条标题颜色
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     //设置导航条是否被隐藏
